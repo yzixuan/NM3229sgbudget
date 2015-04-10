@@ -1,0 +1,110 @@
+body { 
+  background: #eee; 
+  font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.title {
+  text-align: center;
+}
+
+#chart {
+  padding: 30px;
+  width: 960px;
+  height: 500px;
+  background: none;
+  margin: 0 auto;
+}
+
+text {
+  pointer-events: none;
+  font-size: 14px;
+  fill: #fff;
+}
+
+.grandparent text {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.money {
+  font-family: 'Lato', sans-serif; 
+  font-weight: 400; 
+  font-size: 2rem;
+  line-height: 110%;
+  display:block;
+}
+
+.ministry {
+  font-family: 'Lato', sans-serif; 
+  font-size: 16px;
+}
+
+rect {
+  /**fill: none;**/
+  stroke: #eee;
+}
+
+.grandparent text{
+  font-size: 16px;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent rect {
+  fill: #eee;
+    padding-buttom: 30px; !important
+}
+
+.grandparent text {
+  fill: #000;
+}
+
+.grandparent:hover text {
+  fill: #ee9700;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  fill: none;
+  fill-opacity: .8;
+}
+
+.children:hover rect.child {
+  fill: #256A87;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}

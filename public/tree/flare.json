@@ -1,0 +1,120 @@
+{
+ "name": "Total Expenditure: $57.197 Billion",
+ "id": "root",
+ "radius": 67,
+ "color":"#f1c40f",
+ "children": [
+  {
+   "name": "Social Development ($27.575 Billion)",
+   "radius": 37,
+   "color":"#3498db",
+   "children": [
+    {
+     "name": "Education ($11.719 Billion)",
+     "radius": 30,
+     "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+    },
+    {
+     "name": "Communications and Information ($0.500 Billion)",
+     "radius": 5,
+     "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 3, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 3,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 3,"size": 743},
+      {"name": "Development Expenditure", "radius": 3,"size": 743}
+     ]
+    },
+    {
+     "name": "Manpower ($0.715 Billion)",
+     "radius": 6,
+     "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+    },
+    {"name": "Social and Family Development ($1.818 Billion)","radius": 10, "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+    },
+    {"name": "Culture, Community and Youth ($1.939 Billion)","radius": 10, "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+    },
+    {"name": "Health ($7.183 Billion)", "radius": 18, "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+    },
+    {"name": "National Development ($2.205 Billion)", "radius": 14, "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+    },
+    {"name": " Environment and Water Resources ($1.496 Billion)", "radius": 5, "color":"#3498db",
+     "children": [
+      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
+      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
+      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
+      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
+     ]
+  }    
+   ]
+  },
+  {
+   "name": "Security & External Relations ($17.331 Billion)",
+   "radius": 27,
+   "color":"#e67e22",
+   "children": [
+    {"name": "Defence ($12.416 Billion)", "radius": 16, "color":"#e67e22"},
+    {"name": "Home Affairs ($4.474 Billion)", "radius": 8, "color":"#e67e22"},
+    {"name": "Foreign Affairs ($0.440 Billion)", "radius": 5, "color":"#e67e22"}
+   ]
+  },
+  {
+   "name": "Economic Development ($10.105 Billion)",
+   "radius": 20,
+   "color":"#9b59b6",
+   "children": [
+    {"name": "Transport ($6.007 Billion)", "radius": 12, "color":"#9b59b6"},
+    {"name": "Trade and Industry ($2.858 Billion)", "radius": 6, "color":"#9b59b6"},
+    {"name": "Communications and Information ($0.681 Billion)", "radius": 5, "color":"#9b59b6"},
+    {"name": "Manpower ($0.559 Billion)", "radius": 5, "color":"#9b59b6"}
+   ]
+  },
+  {
+   "name": "Government Administration ($2.186 Billion)",
+   "radius": 12,
+   "color":"#2ecc71",
+   "children": [
+    {"name": "Finance ($0.737 Billion)", "radius": 5, "color":"#2ecc71"},
+    {"name": "Law ($0.621 Billion)", "radius": 5, "color":"#2ecc71"},
+    {"name": "Organs of State ($0.415 Billion)", "radius": 5, "color":"#2ecc71"},
+    {"name": "Prime Minister's Office ($0.414 Billion)", "radius": 5, "color":"#2ecc71"}
+   ]
+  }
+ ]
+}
