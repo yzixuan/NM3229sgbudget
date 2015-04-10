@@ -1,8 +1,8 @@
 NM3229 Treemap
 =======
 
-### Treemap for Singapore Government Budget Expenditure (2012 to 2015)
-### Built with node.js and D3.js
+Treemap for Singapore Government Budget Expenditure (2012 to 2015).
+Built with node.js and D3.js.
 
 # Installation
 
