@@ -53,7 +53,7 @@ grandparent.append("text")
     .attr("y", 6 - margin.top)
     .attr("dy", ".35em");
 
-var dataJson = ["SG2014.json", "SG2015.json" ];
+var dataJson = ["data/SG2014.json", "data/SG2015.json" ];
 var jsonFile = dataJson[0];
 
 refresh();
