@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 
-#chart {
+#chart2012, #chart2013, #chart2014 {
   padding: 30px;
   width: 960px;
   height: 500px;
@@ -29,7 +29,7 @@ text {
 .money {
   font-family: 'Lato', sans-serif; 
   font-weight: 400; 
-  font-size: 2rem;
+  font-size: 2.3em;
   line-height: 110%;
   display:block;
 }
@@ -63,7 +63,7 @@ rect.parent,
 }
 
 .grandparent:hover text {
-  fill: #ee9700;
+  fill: #95a5a6;
 }
 
 .children rect.parent,
@@ -107,4 +107,41 @@ rect.parent,
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
+}
+
+.nav-tabs {
+  border-bottom: transparent;
+}
+
+.nav-tabs>li>a {
+  color: #95a5a6;
+  font-size: 20px;
+}
+
+.nav-tabs>li>a:hover {
+  border-bottom: 1px solid #95a5a6;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #555;
+  cursor: default;
+  background-color: transparent;
+  border: none;
+  border-bottom-color: transparent;  
+}
+
+.nav-tabs>li.active {
+  color: #34495e;
+  font-weight: bold;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
 }
