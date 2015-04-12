@@ -3,6 +3,10 @@ body {
   font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
+hr {
+  margin-top: 0px;
+}
+
 .title {
   text-align: center;
 }
@@ -32,6 +36,7 @@ text {
   font-size: 2.3em;
   line-height: 110%;
   display:block;
+  z-index: 100;
 }
 
 .ministry {
@@ -82,7 +87,6 @@ rect.parent,
 
 .d3-tip {
   line-height: 1;
-  font-weight: bold;
   padding: 12px;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -109,6 +113,14 @@ rect.parent,
   left: 0;
 }
 
+.alignleft {
+  font-weight: bold;
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
 .nav-tabs {
   border-bottom: transparent;
 }
@@ -119,7 +131,7 @@ rect.parent,
 }
 
 .nav-tabs>li>a:hover {
-  border-bottom: 1px solid #95a5a6;
+  border-bottom: transparent;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {

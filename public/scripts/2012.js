@@ -28,11 +28,14 @@ function refresh() {
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-            var percentSpent = (d.spent/50.11*100).toFixed(2);
-            if (percentSpent < 0.01)
-                return ("< 0.01% of budget");
-            else
-                return (percentSpent + "% of budget");
+        var percentSpent = (d.spent/50.11*100).toFixed(2);
+        if (percentSpent < 0.01)
+            return ("< 0.01% of budget");
+        else
+            return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                    "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
+                    "<p class='alignleft'>2012: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    );
       });
 
     var svg = d3.select("#chart2012").append("svg")
@@ -46,18 +49,18 @@ function refresh() {
 
     svg.call(tip);
 
-var grandparent = svg.append("g")
-    .attr("class", "grandparent");
+    var grandparent = svg.append("g")
+        .attr("class", "grandparent");
 
-grandparent.append("rect")
-    .attr("y", -margin.top)
-    .attr("width", width)
-    .attr("height", margin.top);
+    grandparent.append("rect")
+        .attr("y", -margin.top)
+        .attr("width", width)
+        .attr("height", margin.top);
 
-grandparent.append("text")
-    .attr("x", 6)
-    .attr("y", 6 - margin.top)
-    .attr("dy", ".35em");    
+    grandparent.append("text")
+        .attr("x", 6)
+        .attr("y", 6 - margin.top)
+        .attr("dy", ".35em");    
 
     d3.json("data/SG2012.json", function (root) {
         initialize(root);
@@ -141,11 +144,10 @@ grandparent.append("text")
                 })
                 .call(rect)
                 .on('mouseover', tip.show)
-                .on('mouseout', tip.hide)
-                .append("title")
-                .text(function (d) {
-                    return formatNumber(d.value);
-                });
+                .on('mouseout', tip.hide);
+                //.attr("data-toggle", "modal")
+                //.attr("data-trigger", "hover")
+                //.attr("data-target", "#graphModal");
 
             text_node = g.append("text")
                 .attr("x", function(t) {
@@ -239,7 +241,7 @@ grandparent.append("text")
 
         function name(d) {
             return d.parent
-                ? name(d.parent) + " / " + d.name
+                ? name(d.parent) + " > " + d.name
                 : d.name;
         }
     });
@@ -255,7 +257,10 @@ function refresh2() {
             if (percentSpent < 0.01)
                 return ("< 0.01% of budget");
             else
-                return (percentSpent + "% of budget");
+            return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                    "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
+                    "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    );
       });
 
     var svg = d3.select("#chart2013").append("svg")
@@ -364,11 +369,7 @@ function refresh2() {
                 })
                 .call(rect)
                 .on('mouseover', tip.show)
-                .on('mouseout', tip.hide)
-                .append("title")
-                .text(function (d) {
-                    return formatNumber(d.value);
-                });
+                .on('mouseout', tip.hide);
 
             text_node = g.append("text")
                 .attr("x", function(t) {
@@ -478,7 +479,10 @@ function refresh3() {
             if (percentSpent < 0.01)
                 return ("< 0.01% of budget");
             else
-                return (percentSpent + "% of budget");
+            return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                    "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
+                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    );
       });
 
     var svg = d3.select("#chart2014").append("svg")
@@ -587,11 +591,7 @@ function refresh3() {
                 })
                 .call(rect)
                 .on('mouseover', tip.show)
-                .on('mouseout', tip.hide)
-                .append("title")
-                .text(function (d) {
-                    return formatNumber(d.value);
-                });
+                .on('mouseout', tip.hide);
 
             text_node = g.append("text")
                 .attr("x", function(t) {
