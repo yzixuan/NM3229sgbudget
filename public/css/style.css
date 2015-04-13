@@ -1,10 +1,22 @@
 body { 
   background: #eee; 
   font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  min-height: 800px; 
 }
 
 hr {
   margin-top: 0px;
+}
+
+text {
+  pointer-events: none;
+  font-size: 14px;
+  fill: #fff;
+}
+
+.country {
+  font-weight: bold;
+  color: #e74c3c;
 }
 
 .title {
@@ -17,17 +29,6 @@ hr {
   height: 500px;
   background: none;
   margin: 0 auto;
-}
-
-text {
-  pointer-events: none;
-  font-size: 14px;
-  fill: #fff;
-}
-
-.grandparent text {
-  font-weight: normal;
-  font-size: 14px;
 }
 
 .money {
@@ -50,12 +51,11 @@ rect {
 }
 
 .grandparent text{
-  font-size: 16px;
+  font-size: 20px;
 }
 
-rect.parent,
-.grandparent rect {
-  stroke-width: 2px;
+rect.parent, .grandparent rect {
+  stroke-width: 3px;
 }
 
 .grandparent rect {
@@ -88,19 +88,28 @@ rect.parent,
 .d3-tip {
   line-height: 1;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: #fff;
+  color: #000;
   border-radius: 2px;
+}
+
+.d3-tip h4 {
+  color: #1abc9c;
+}
+
+.d3-tip hr {
+  height: 3px;
+  background-color:#1abc9c;
 }
 
 /* Creates a small triangle extender for the tooltip */
 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
-  font-size: 10px;
+  font-size: 20px;
   width: 100%;
   line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   content: "\25BC";
   position: absolute;
   text-align: center;
@@ -108,7 +117,7 @@ rect.parent,
 
 /* Style northward tooltips differently */
 .d3-tip.n:after {
-  margin: -1px 0 0 0;
+  margin: -6px 0 0 0;
   top: 100%;
   left: 0;
 }
@@ -125,8 +134,32 @@ rect.parent,
   border-bottom: transparent;
 }
 
+.circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    font-size:20px;
+    line-height:64px;
+    text-align:center;
+    color: #e74c3c;
+    background: transparent;
+    border: 5px solid #e74c3c;
+    margin: 20px 30px;
+    cursor: pointer;
+}
+
+.circle:hover {
+    color: #fff;
+    background: #c0392b;
+}
+
+.circle.active {
+    color: #fff;
+    background: #e74c3c;
+}
+
 .nav-tabs>li>a {
-  color: #95a5a6;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -135,7 +168,7 @@ rect.parent,
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-  color: #555;
+  color: #fff;
   cursor: default;
   background-color: transparent;
   border: none;
@@ -143,7 +176,7 @@ rect.parent,
 }
 
 .nav-tabs>li.active {
-  color: #34495e;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -151,7 +184,7 @@ rect.parent,
     float:none;
     display:inline-block;
     *display:inline; /* ie7 fix */
-    zoom:1; /* hasLayout ie7 trigger */
+    zoom:1;
 }
 
 .nav-tabs, .nav-pills {
