@@ -123,7 +123,7 @@
       "radius": 3.9, 
       "spent2012": "02.368",
       "spent2013": "01.555",
-     "spent2014": "02.205",
+      "spent2014": "02.205",
       "color":"#92A1CF",
      "children": [
       {"name": "Manpower Expenditure", "level": 4, "small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490", 
@@ -202,11 +202,11 @@
      "children": [
       {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent2012": "2.020", "spent2013": "02.191", "spent2014": "02.559", 
       "color":"#FF9800", "value": 2020},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent2012": "0.0068", "spent2013": "0.0068", "spent2014": "", 
+      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent2012": "0.0068", "spent2013": "0.0068", "spent2014": "0.0067", 
       "color":"#FF9800", "value": 7},
-      {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent2012": "01.249", "spent2013": "", "spent2014": "", 
+      {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent2012": "01.249", "spent2013": "01.306", "spent2014": "01.449", 
       "color":"#FF9800", "value": 1250},
-      {"name": "Transfers", "level": 4, "small": "true", "spent2012": "0.0248", "spent2013": "", "spent2014": "", 
+      {"name": "Transfers", "level": 4, "small": "true", "spent2012": "0.0248", "spent2013": "0.0382", "spent2014": "0.0407", 
       "color":"#FF9800", "value": 24},
       {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent2012": "0.1903", "spent2013": "0.3398", "spent2014": "0.4196", 
       "color":"#FF9800", "value": 190}
@@ -253,7 +253,7 @@
      "children": [
       {"name": "Manpower Expenditure", "level": 4,"small": "true", "spent2012": "0.0167", "spent2013": "0.0168", "spent2014": "0.0219", 
       "color":"#7B1FA2", "value": 16},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4,"small": "true", "spent2012": "0.0484", "spent2013": "0.0528", "spent2014": "0.0744s", 
+      {"name": "Grants, Subventions & Capital Injections", "level": 4,"small": "true", "spent2012": "0.0484", "spent2013": "0.0528", "spent2014": "0.0744", 
       "color":"#7B1FA2", "value": 48},
       {"name": "Other Operating Expenditure", "level": 4,"small": "true", "spent2012": "0.4730", "spent2013": "0.5009", "spent2014": "0.5047", 
       "color":"#7B1FA2", "value": 473},

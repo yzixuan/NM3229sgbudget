@@ -14,6 +14,14 @@ text {
   fill: #fff;
 }
 
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
 .country {
   font-weight: bold;
   color: #e74c3c;
@@ -99,15 +107,16 @@ rect.parent, .grandparent rect {
   background: #fff;
   color: #000;
   border-radius: 2px;
+  min-width: 250px;
 }
 
 .d3-tip h4 {
-  color: #1abc9c;
+  color: #34495e;
 }
 
 .d3-tip hr {
   height: 3px;
-  background-color: #1abc9c;
+  background-color: #34495e;
 }
 
 /* Creates a small triangle extender for the tooltip */

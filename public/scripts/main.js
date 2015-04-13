@@ -29,17 +29,39 @@ function refresh() {
       .offset([-10, 0])
       .html(function(d) {
         var percentSpent = (d.spent2012/50.11*100).toFixed(2);
+        var change1 = ((d.spent2013 - d.spent2012)/(d.spent2012)*100).toFixed(2);
+        var change2 = ((d.spent2014 - d.spent2013)/(d.spent2013)*100).toFixed(2);
+        
+        var color2, sign2 = "";
+        if (change2 > 0) {
+            color2 = "green";
+            sign2 = "+"
+        }
+        else if (change2 < 0)
+            color2 = "red";
+
+        var color1, sign1 = "";
+        if (change1 > 0) {
+            color1 = "green";
+            sign1 = "+";
+        }
+        else if (change1 < 0)
+            color1 = "red";
+
+
         if (percentSpent < 0.01)
             return ("<h4><strong>" + d.name + "</strong></h4>" + 
                     "<p>< 0.01% of overall budget</p><hr/>" +
-                    "<p class='alignleft'>2012: </p>" + "<p class='alignright'>" + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
                     );
         else
             return ("<h4><strong>" + d.name + "</strong></h4>" + 
                     "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent2014 + " billion</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: </p>" + "<p class='alignright up'>" + d.spent2013 + " billion</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: </p>" + "<p class='alignright up2'>" + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
                     );
       });
 
@@ -263,16 +285,39 @@ function refresh2() {
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-            var percentSpent = (d.spent/52.34*100).toFixed(2);
+            var percentSpent = (d.spent2013/52.34*100).toFixed(2);
+            var change1 = ((d.spent2013 - d.spent2012)/(d.spent2012)*100).toFixed(2);
+            var change2 = ((d.spent2014 - d.spent2013)/(d.spent2013)*100).toFixed(2);
+            
+            var color2, sign2 = "";
+            if (change2 > 0) {
+                color2 = "green";
+                sign2 = "+"
+            }
+            else if (change2 < 0)
+                color2 = "red";
+
+            var color1, sign1 = "";
+            if (change1 > 0) {
+                color1 = "green";
+                sign1 = "+";
+            }
+            else if (change1 < 0)
+                color1 = "red";
+
             if (percentSpent < 0.01)
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>< 0.01% of overall budget</p><hr/>" +
-                        "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
                         );
             else
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                        "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
                         );
       });
 
@@ -394,7 +439,7 @@ function refresh2() {
                 .attr("class", "money")
                 .text(function (d) {
                     if (d.small != "true")
-                        return d.spent;
+                        return d.spent2013;
                 })
                 .attr("dy", "1.1em")
                 .attr("dx", "0.3em");
@@ -493,16 +538,39 @@ function refresh3() {
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-            var percentSpent = (d.spent/57.197*100).toFixed(2);
+            var percentSpent = (d.spent2014/57.197*100).toFixed(2);
+            var change1 = ((d.spent2013 - d.spent2012)/(d.spent2012)*100).toFixed(2);
+            var change2 = ((d.spent2014 - d.spent2013)/(d.spent2013)*100).toFixed(2);
+            
+            var color2, sign2 = "";
+            if (change2 > 0) {
+                color2 = "green";
+                sign2 = "+"
+            }
+            else if (change2 < 0)
+                color2 = "red";
+
+            var color1, sign1 = "";
+            if (change1 > 0) {
+                color1 = "green";
+                sign1 = "+";
+            }
+            else if (change1 < 0)
+                color1 = "red";
+                            
             if (percentSpent < 0.01)
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>< 0.01% of overall budget</p><hr/>" +
-                        "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
                         );
             else
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                        "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
                         );
       });
 
@@ -624,7 +692,7 @@ function refresh3() {
                 .attr("class", "money")
                 .text(function (d) {
                     if (d.small != "true")
-                        return d.spent;
+                        return d.spent2014;
                 })
                 .attr("dy", "1.1em")
                 .attr("dx", "0.3em");
