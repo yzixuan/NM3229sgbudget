@@ -31,12 +31,7 @@
      "radius": 0.9,
      "spent": "0.5000",
      "color":"#03A9F4",
-     "children": [
-      {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "0.1000", "color":"#03A9F4", "value": 100},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4,"radius": 5.7, "spent": "0.2480", "color":"#03A9F4", "value": 248},
-      {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "0.1502", "color":"#03A9F4", "value": 152},
-      {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.0320", "color":"#03A9F4", "value": 32}
-     ]
+     "value":500
     },
     {
      "name": "Manpower",
@@ -54,7 +49,7 @@
      "color":"#00BCD4",
      "children": [
       {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "0.1566", "color":"#00BCD4", "value": 157},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4,"radius": 5.7, "spent": "0.0284", "color":"#00BCD4", "value": 28},
+      {"name": "Grants, Subventions & Capital Injections", "level": 4,"small": "true", "spent": "0.0284", "color":"#00BCD4", "value": 28},
       {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "0.1115", "color":"#00BCD4", "value": 111},
       {"name": "Transfers to Individuals & Organizations", "level": 4,"radius": 0.00001, "spent": "01.456", "color":"#00BCD4", "value": 1456},
       {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.0655", "color":"#00BCD4", "value": 65}
@@ -67,10 +62,10 @@
       "spent": "01.939",
       "color":"#3498db",
      "children": [
-      {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "0.0372", "color":"#3498db", "value": 37},
+      {"name": "Manpower Expenditure", "level": 4,"small": "true", "spent": "0.0372", "color":"#3498db", "value": 37},
       {"name": "Grants, Subventions & Capital Injections", "level": 4,"radius": 5.7, "spent": "01.181", "color":"#3498db", "value": 1181},
-      {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "0.0461", "color":"#3498db", "value": 46},
-      {"name": "Transfers to Individuals & Organizations", "level": 4,"radius": 0.00001, "spent": "0.0711", "color":"#00BCD4", "value": 71},
+      {"name": "Other Operating Expenditure", "level": 4,"small": "true", "spent": "0.0461", "color":"#3498db", "value": 46},
+      {"name": "Transfers to Individuals & Organizations", "level": 4,"radius": 0.00001, "spent": "0.0711", "color":"#3498db", "value": 71},
       {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.6036", "color":"#3498db", "value": 603}
      ]
     },
@@ -130,13 +125,13 @@
       "level": 3, 
       "radius": 21.7, 
       "spent":"12.416", 
-      "color":"#FFC107", 
+      "color":"#d35400", 
      "children": [
-      {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "0.0147", "color":"#FFC107", "value": 14},
-      {"name": "Transfers to Organisations", "level": 4,"radius": 0.00001, "spent": "0.0082", "color":"#FF9800", "value": 10},
-      {"name": "Military Expenditure", "level": 4,"radius": 0.00001, "spent": "11.919", "color":"#FFC107", "value": 11919},
-      {"name": "Miscellaneous", "level": 4,"radius": 0.00001, "spent": "0.0017", "color":"#FFC107", "value": 10},
-      {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.4290", "color":"#FFC107", "value": 429}
+      {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "0.0147", "color":"#d35400", "value": 14},
+      {"name": "Transfers to Organisations", "level": 4,"radius": 0.00001, "spent": "0.0082", "color":"#d35400", "value": 10},
+      {"name": "Military Expenditure", "level": 4,"radius": 0.00001, "spent": "11.919", "color":"#d35400", "value": 11919},
+      {"name": "Miscellaneous", "level": 4,"radius": 0.00001, "spent": "0.0017", "color":"#d35400", "value": 10},
+      {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.4290", "color":"#d35400", "value": 429}
      ]
     },
     {
@@ -265,7 +260,6 @@
       {"name": "Attorney-General’s Chambers", "level": 4, "radius": 6, "spent": "0.1347", "color":"#27ae60", "value": 134},
       {"name": "Auditor-General’s Office", "level": 4,"radius": 5.7, "spent": "0.0298", "color":"#27ae60", "value": 30},
       {"name": "The Cabinet", "level": 4, "small": "true", "spent": "0.0012", "color":"#27ae60", "value": 5},
-      {"name": "Industrial Arbitration Court", "level": 4,"radius": 5.7, "spent": "03.248", "color":"#27ae60", "value": 40},
       {"name": "Istana", "level": 4, "small": "true", "spent": "0.0095", "color":"#27ae60", "value": 10},
       {"name": "Judiciature", "level": 4,"radius": 0.00001, "spent": "0.2028", "color":"#27ae60", "value": 203},
       {"name": "Parliament Of Singapore", "level": 4,"radius": 5.7, "spent": "0.0343", "color":"#27ae60", "value": 34},

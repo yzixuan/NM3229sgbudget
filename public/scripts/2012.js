@@ -30,11 +30,14 @@ function refresh() {
       .html(function(d) {
         var percentSpent = (d.spent/50.11*100).toFixed(2);
         if (percentSpent < 0.01)
-            return ("< 0.01% of budget");
+            return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                    "<p>< 0.01% of overall budget</p><hr/>" +
+                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    );
         else
             return ("<h4><strong>" + d.name + "</strong></h4>" + 
                     "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2012: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
                     );
       });
 
@@ -158,20 +161,25 @@ function refresh() {
             text_node.append("tspan")
                 .attr("class", "money")
                 .text(function (d) {
-                    return d.spent;
+                    if (d.small != "true")
+                        return d.spent;
                 })
                 .attr("dy", "1.1em")
                 .attr("dx", "0.3em");
 
             text_node.append("tspan")
-                .text("BILLION (SGD)")
+                .text(function (d) {
+                    if (d.small != "true")
+                        return "BILLION (SGD)";
+                })
                 .attr("dy", "1.2em")
                 .attr("dx", "-7em");
 
             text_node.append("tspan")
                 .attr("class", "ministry")
                 .text(function (d) {
-                    return d.name;
+                    if (d.small != "true")
+                        return d.name;
                 })
                 .attr("dy", "1.6em")
                 .attr("dx", "-6.1em");
@@ -255,12 +263,15 @@ function refresh2() {
       .html(function(d) {
             var percentSpent = (d.spent/52.34*100).toFixed(2);
             if (percentSpent < 0.01)
-                return ("< 0.01% of budget");
+                return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                        "<p>< 0.01% of overall budget</p><hr/>" +
+                        "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                        );
             else
-            return ("<h4><strong>" + d.name + "</strong></h4>" + 
-                    "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
-                    );
+                return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                        "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
+                        "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                        );
       });
 
     var svg = d3.select("#chart2013").append("svg")
@@ -380,20 +391,25 @@ function refresh2() {
             text_node.append("tspan")
                 .attr("class", "money")
                 .text(function (d) {
-                    return d.spent;
+                    if (d.small != "true")
+                        return d.spent;
                 })
                 .attr("dy", "1.1em")
                 .attr("dx", "0.3em");
 
             text_node.append("tspan")
-                .text("BILLION (SGD)")
+                .text(function (d) {
+                    if (d.small != "true")
+                        return "BILLION (SGD)";
+                })
                 .attr("dy", "1.2em")
                 .attr("dx", "-7em");
 
             text_node.append("tspan")
                 .attr("class", "ministry")
                 .text(function (d) {
-                    return d.name;
+                    if (d.small != "true")
+                        return d.name;
                 })
                 .attr("dy", "1.6em")
                 .attr("dx", "-6.1em");
@@ -477,15 +493,15 @@ function refresh3() {
       .html(function(d) {
             var percentSpent = (d.spent/57.197*100).toFixed(2);
             if (percentSpent < 0.01)
-            return ("<h4><strong>" + d.name + "</strong></h4>" + 
-                    "<p>< 0.01% of overall budget</p><hr/>" +
-                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
-                    );
+                return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                        "<p>< 0.01% of overall budget</p><hr/>" +
+                        "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                        );
             else
-            return ("<h4><strong>" + d.name + "</strong></h4>" + 
-                    "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
-                    );
+                return ("<h4><strong>" + d.name + "</strong></h4>" + 
+                        "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
+                        "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                        );
       });
 
     var svg = d3.select("#chart2014").append("svg")
