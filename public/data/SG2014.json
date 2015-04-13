@@ -20,7 +20,7 @@
      "children": [
       {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "03.451", "color":"#2196F3", "value": 3451},
       {"name": "Grants, Subventions & Capital Injections", "level": 4,"radius": 5.7, "spent": "03.248", "color":"#2196F3", "value": 3248},
-      {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "0.0007", "color":"#2196F3", "value": 10},
+      {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "0.7197", "color":"#2196F3", "value": 720},
       {"name": "Transfers to Indivs & Organisations", "level": 4,"radius": 0.00001, "spent": "03.436", "color":"#2196F3", "value": 3436},
       {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.9730", "color":"#2196F3", "value": 973}
      ]
@@ -117,8 +117,8 @@
    "name": "Security & Ext Relations",
    "level": 2,
    "radius": 30.3,
-   "spent":"17.331",
-   "color":"#FF9800",
+   "spent": "17.331",
+   "color": "#FF9800",
    "children": [
     {
       "name": "Defence", 
@@ -202,7 +202,7 @@
       "name": "Communications and Info",
       "level": 3,
       "radius": 1.2,
-      "spent":"0.6808",
+      "spent": "0.6808",
       "color":"#8A458A",
       "value":680
       },
@@ -233,7 +233,7 @@
       {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "0.1568", "color":"#4CAF50", "value": 156},
       {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0146", "color":"#4CAF50", "value": 14},
       {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "0.5004", "color":"#4CAF50", "value": 500},
-      {"name": "Transfers to Individuals & Organisations", "level": 4, "small": "true", "spent": "0.0020", "color":"#4CAF50", "value": 10},
+      {"name": "Transfers to Individuals & Organisations", "level": 4, "small": "true", "spent": "0.0204", "color":"#4CAF50", "value": 20},
       {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "0.0443", "color":"#4CAF50", "value": 40}
      ]
       },

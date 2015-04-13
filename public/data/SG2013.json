@@ -45,14 +45,14 @@
      "name": "Social and Family",
      "level": 3,
      "radius": 3.2,
-     "spent": "01.690", 
+     "spent": "01.690",
      "color":"#00BCD4",
      "children": [
       {"name": "Manpower Expenditure", "level": 4, "small": "true", "spent": "0.0136", "color":"#00BCD4", "value": 14},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0033", "color":"#00BCD4", "value": 5},
+      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0327", "color":"#00BCD4", "value": 32},
       {"name": "Other Operating Expenditure", "level": 4, "small": "true", "spent": "0.0986", "color":"#00BCD4", "value": 100},
       {"name": "Transfers to Individuals & Organizations", "level": 4,"radius": 0.00001, "spent": "01.378", "color":"#00BCD4", "value": 1378},
-      {"name": "Development Expenditure", "level": 4, "small": "true", "spent": "0.0046", "color":"#00BCD4", "value": 5}
+      {"name": "Development Expenditure", "level": 4, "small": "true", "spent": "0.0456", "color":"#00BCD4", "value": 45}
      ]
     },
     {
@@ -140,10 +140,10 @@
       "color":"#FF9800", 
      "children": [
       {"name": "Manpower Expenditure", "level": 4,"radius": 6, "spent": "02.191", "color":"#FF9800", "value": 2190},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0007", "color":"#FF9800", "value": 5},
+      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0068", "color":"#FF9800", "value": 5},
       {"name": "Other Operating Expenditure", "level": 4,"radius": 0.00001, "spent": "01.306", "color":"#FF9800", "value": 1306},
       {"name": "Transfers to Individuals & Organisations", "level": 4, "small": "true", "spent": "0.0382", "color":"#FF9800", "value": 38},
-      {"name": "Development Expenditure", "level": 4, "small": "true", "spent": "0.0339", "color":"#FF9800", "value": 33}
+      {"name": "Development Expenditure", "level": 4, "spent": "0.3398", "color":"#FF9800", "value": 340}
      ]
       },
     {
@@ -175,9 +175,9 @@
       "spent":"05.944",
       "color":"#7B1FA2",
      "children": [
-      {"name": "Manpower Expenditure", "level": 4, "small": "true", "spent": "0.0016", "color":"#7B1FA2", "value": 5},
-      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0053", "color":"#7B1FA2", "value": 5},
-      {"name": "Other Operating Expenditure", "level": 4, "small": "true", "spent": "0.5000", "color":"#7B1FA2", "value": 500},
+      {"name": "Manpower Expenditure", "level": 4, "small": "true", "spent": "0.0168", "color":"#7B1FA2", "value": 16},
+      {"name": "Grants, Subventions & Capital Injections", "level": 4, "small": "true", "spent": "0.0528", "color":"#7B1FA2", "value": 53},
+      {"name": "Other Operating Expenditure", "level": 4, "small": "true", "spent": "0.5009", "color":"#7B1FA2", "value": 501},
       {"name": "Transfers to Individuals & Orgs", "level": 4, "small": "true", "spent": "0.0017", "color":"#7B1FA2", "value": 5},
       {"name": "Development Expenditure", "level": 4,"radius": 0.02, "spent": "05.372", "color":"#7B1FA2", "value": 5372}
      ]

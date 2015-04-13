@@ -1,6 +1,6 @@
 var margin = {top: 30, right: 0, bottom: 0, left: 0},
     width = 960,
-    height = 500 - margin.top - margin.bottom,
+    height = 520 - margin.top - margin.bottom,
     formatNumber = d3.format(",d"),
     transitioning;
 
@@ -28,16 +28,18 @@ function refresh() {
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        var percentSpent = (d.spent/50.11*100).toFixed(2);
+        var percentSpent = (d.spent2012/50.11*100).toFixed(2);
         if (percentSpent < 0.01)
             return ("<h4><strong>" + d.name + "</strong></h4>" + 
                     "<p>< 0.01% of overall budget</p><hr/>" +
-                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2012: </p>" + "<p class='alignright'>" + d.spent2012 + " billion</p>"
                     );
         else
             return ("<h4><strong>" + d.name + "</strong></h4>" + 
                     "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                    "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent2014 + " billion</p><br/><br/>" +
+                    "<p class='alignleft up'>2013: </p>" + "<p class='alignright up'>" + d.spent2013 + " billion</p><br/><br/>" +
+                    "<p class='alignleft up2'>2012: </p>" + "<p class='alignright up2'>" + d.spent2012 + " billion</p>"
                     );
       });
 
@@ -162,7 +164,7 @@ function refresh() {
                 .attr("class", "money")
                 .text(function (d) {
                     if (d.small != "true")
-                        return d.spent;
+                        return d.spent2012;
                 })
                 .attr("dy", "1.1em")
                 .attr("dx", "0.3em");
@@ -265,7 +267,7 @@ function refresh2() {
             if (percentSpent < 0.01)
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>< 0.01% of overall budget</p><hr/>" +
-                        "<p class='alignleft'>2014: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
+                        "<p class='alignleft'>2013: </p>" + "<p class='alignright'>" + d.spent + " billion</p>"
                         );
             else
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
