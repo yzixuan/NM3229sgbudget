@@ -1,120 +1,396 @@
 {
- "name": "Total Expenditure: $57.197 Billion",
- "id": "root",
- "radius": 67,
- "color":"#f1c40f",
- "children": [
-  {
-   "name": "Social Development ($27.575 Billion)",
-   "radius": 37,
-   "color":"#3498db",
-   "children": [
-    {
-     "name": "Education ($11.719 Billion)",
-     "radius": 30,
-     "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-    },
-    {
-     "name": "Communications and Information ($0.500 Billion)",
-     "radius": 5,
-     "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 3, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 3,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 3,"size": 743},
-      {"name": "Development Expenditure", "radius": 3,"size": 743}
-     ]
-    },
-    {
-     "name": "Manpower ($0.715 Billion)",
-     "radius": 6,
-     "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-    },
-    {"name": "Social and Family Development ($1.818 Billion)","radius": 10, "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-    },
-    {"name": "Culture, Community and Youth ($1.939 Billion)","radius": 10, "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-    },
-    {"name": "Health ($7.183 Billion)", "radius": 18, "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-    },
-    {"name": "National Development ($2.205 Billion)", "radius": 14, "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-    },
-    {"name": " Environment and Water Resources ($1.496 Billion)", "radius": 5, "color":"#3498db",
-     "children": [
-      {"name": "Manpower Expenditure", "radius": 5.5, "size": 3938},
-      {"name": "Grants, Subventions & Capital Injections to Organisations", "radius": 5.5,"size": 3812},
-      {"name": "Other Operating Expenditure", "radius": 5.5,"size": 743},
-      {"name": "Development Expenditure", "radius": 5.5,"size": 743}
-     ]
-  }    
-   ]
-  },
-  {
-   "name": "Security & External Relations ($17.331 Billion)",
-   "radius": 27,
-   "color":"#e67e22",
-   "children": [
-    {"name": "Defence ($12.416 Billion)", "radius": 16, "color":"#e67e22"},
-    {"name": "Home Affairs ($4.474 Billion)", "radius": 8, "color":"#e67e22"},
-    {"name": "Foreign Affairs ($0.440 Billion)", "radius": 5, "color":"#e67e22"}
-   ]
-  },
-  {
-   "name": "Economic Development ($10.105 Billion)",
-   "radius": 20,
-   "color":"#9b59b6",
-   "children": [
-    {"name": "Transport ($6.007 Billion)", "radius": 12, "color":"#9b59b6"},
-    {"name": "Trade and Industry ($2.858 Billion)", "radius": 6, "color":"#9b59b6"},
-    {"name": "Communications and Information ($0.681 Billion)", "radius": 5, "color":"#9b59b6"},
-    {"name": "Manpower ($0.559 Billion)", "radius": 5, "color":"#9b59b6"}
-   ]
-  },
-  {
-   "name": "Government Administration ($2.186 Billion)",
-   "radius": 12,
-   "color":"#2ecc71",
-   "children": [
-    {"name": "Finance ($0.737 Billion)", "radius": 5, "color":"#2ecc71"},
-    {"name": "Law ($0.621 Billion)", "radius": 5, "color":"#2ecc71"},
-    {"name": "Organs of State ($0.415 Billion)", "radius": 5, "color":"#2ecc71"},
-    {"name": "Prime Minister's Office ($0.414 Billion)", "radius": 5, "color":"#2ecc71"}
-   ]
-  }
- ]
+    "name": "Government",
+    "level": 1,
+    "radius": 100,
+    "spent2014": "57.197",
+    "color":"#f1c40f",
+    "children": [
+        {
+            "name": "Ministries",
+            "level": 2,
+            "radius": 48.2,
+            "spent2012": "22.414",
+            "spent2013": "24.376",
+            "spent2014": "27.575",
+            "color":"#3498db",
+            "children": [
+                {
+                    "name": "Ministry of Education",
+                    "level": 3,
+                    "radius": 20.5,
+                    "spent2012": "10.525",
+                    "spent2013": "11.599",
+                    "spent2014": "11.720",
+                    "color":"#2196F3",
+                    "children": [
+                        {"name": "Institute of Southeast Asian Studies", "level": 4,"radius": 6, "spent2012": "03.046", "spent2013": "03.313", "spent2014": "03.451",
+                            "color":"#2196F3", "value": 3451},
+                        {"name": "Institute of Technical Education", "level": 4,"radius": 5.7, "spent2012": "02.885", "spent2013": "03.151", "spent2014": "03.248",
+                            "color":"#2196F3", "value": 3248},
+                        {"name": "Nanyang Polytechnic", "level": 4,"radius": 0.00001, "spent2012": "0.5803", "spent2013": "0.6730", "spent2014": "0.7197",
+                            "color":"#2196F3", "value": 720},
+                        {"name": "Ngee Ann Polytechnic", "level": 4,"radius": 0.00001, "spent2012": "03.179", "spent2013": "03.582", "spent2014": "03.436",
+                            "color":"#2196F3", "value": 3436},
+                        {"name": "Republic Polytechnic", "level": 4,"radius": 5.7, "spent2012": "02.885", "spent2013": "03.151", "spent2014": "03.248",
+                            "color":"#2196F3", "value": 3248},
+                        {"name": "Science Centre Board", "level": 4,"radius": 0.00001, "spent2012": "0.5803", "spent2013": "0.6730", "spent2014": "0.7197",
+                            "color":"#2196F3", "value": 720},
+                        {"name": "Singapore Examinations and Assessment Board", "level": 4,"radius": 0.00001, "spent2012": "03.179", "spent2013": "03.582", "spent2014": "03.436",
+                            "color":"#2196F3", "value": 3436},
+                        {"name": "Singapore Polytechnic", "level": 4,"radius": 0.00001, "spent2012": "03.179", "spent2013": "03.582", "spent2014": "03.436",
+                            "color":"#2196F3", "value": 3436},
+                        {"name": "Temasek Polytechnic", "level": 4,"radius": 0.02, "spent2012": "0.8330", "spent2013": "0.8790", "spent2014": "0.9730",
+                            "color":"#2196F3", "value": 973}
+                    ]
+                },
+                {
+                    "name": "Ministry of Communications & Information",
+                    "level": 3,
+                    "radius": 0.9,
+                    "spent2012": "0.5270",
+                    "spent2013": "0.4140",
+                    "spent2014": "0.5000",
+                    "color":"#03A9F4",
+                    "children": [
+                        {"name": "Infocomm Development Authority of Singapore (IDA)", "level": 4,"radius": 6, "spent2012": "03.046", "spent2013": "03.313", "spent2014": "03.451",
+                            "color":"#2196F3", "value": 3451},
+                        {"name": "Media Development Authority", "level": 4,"radius": 5.7, "spent2012": "02.885", "spent2013": "03.151", "spent2014": "03.248",
+                            "color":"#2196F3", "value": 3248},
+                        {"name": "National Arts Council", "level": 4,"radius": 0.00001, "spent2012": "0.5803", "spent2013": "0.6730", "spent2014": "0.7197",
+                            "color":"#2196F3", "value": 720},
+                        {"name": "National Heritage Board", "level": 4,"radius": 0.00001, "spent2012": "03.179", "spent2013": "03.582", "spent2014": "03.436",
+                            "color":"#2196F3", "value": 3436},
+                        {"name": "National Library Board", "level": 4,"radius": 0.00001, "spent2012": "03.179", "spent2013": "03.582", "spent2014": "03.436",
+                            "color":"#2196F3", "value": 3436},
+                        {"name": "Preservation Of Monuments Board", "level": 4,"radius": 0.02, "spent2012": "0.8330", "spent2013": "0.8790", "spent2014": "0.9730",
+                            "color":"#2196F3", "value": 973}
+                    ]
+                },
+                {
+                    "name": "Ministry of Defence",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Centre for Strategic Infocomm Technologies", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Defence Science and Technology Agency (DSTA)", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Defence Policy Group", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "SAF Formations", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Singapore Armed Forces", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Ministry of Foreign Affairs",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Americas Directorate", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "ASEAN Directorate", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Corporate Affairs Directorate", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Europe Directorate", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "International Organisations Directorate", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Middle East, North Africa and Central Asia Directorate", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Northeast Asia Directorate", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "South Asia and Sub-Saharan Africa Directorate", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Technical Cooperation Directorate", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Ministry of Home Affairs",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Central Narcotics Bureau", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Home Team Academy", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Immigration and Checkpoints Authority", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Internal Security Department", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Singapore Civil Defence Force", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Singapore Police Force", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Singapore Prison Service", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Ministry of Manpower",
+                    "level": 3,
+                    "radius": 1.3,
+                    "spent2012": "0.5950",
+                    "spent2013": "0.6710",
+                    "spent2014": "0.7150",
+                    "color":"#1976D2",
+                    "children": [
+                        {"name": "Central Provident Fund Board", "level": 4,"radius": 6, "spent2012": "0.1036", "spent2013": "0.0136", "spent2014": "0.1566",
+                            "color":"#00BCD4", "value": 157},
+                        {"name": "Singapore Labour Foundation", "level": 4,"small": "true", "spent2012": "0.3720", "spent2013": "0.0327", "spent2014": "0.0284",
+                            "color":"#00BCD4", "value": 28},
+                        {"name": "Singapore Workforce Development Agency", "level": 4,"radius": 0.02, "spent2012": "0.0388", "spent2013": "0.0456", "spent2014": "0.0655",
+                            "color":"#00BCD4", "value": 65}
+                    ]
+                },
+                {
+                    "name": "Ministry of Social and Family Development",
+                    "level": 3,
+                    "radius": 3.2,
+                    "spent2012": "01.797",
+                    "spent2013": "01.690",
+                    "spent2014": "01.818",
+                    "color":"#00BCD4",
+                    "children": [
+                        {"name": "Early Childhood and Development Agency", "level": 4,"radius": 6, "spent2012": "0.1036", "spent2013": "0.0136", "spent2014": "0.1566",
+                            "color":"#00BCD4", "value": 157},
+                        {"name": "Families for Life", "level": 4,"small": "true", "spent2012": "0.3720", "spent2013": "0.0327", "spent2014": "0.0284",
+                            "color":"#00BCD4", "value": 28},
+                        {"name": "National Council on Problem Gambling", "level": 4,"radius": 0.00001, "spent2012": "0.0940", "spent2013": "0.0986", "spent2014": "0.1115",
+                            "color":"#00BCD4", "value": 111},
+                        {"name": "National Council of Social Service (NCSS)", "level": 4,"radius": 0.02, "spent2012": "0.0388", "spent2013": "0.0456", "spent2014": "0.0655",
+                            "color":"#00BCD4", "value": 65}
+                    ]
+                },
+                {
+                    "name": "Ministry of Culture, Community and Youth",
+                    "level": 3,
+                    "radius": 3.4,
+                    "spent2012": "0.6032",
+                    "spent2013": "01.358",
+                    "spent2014": "01.939",
+                    "color":"#3498db",
+                    "children": [
+                        {"name": "Majlis Ugama Islam Singapura", "level": 4,"small": "true", "spent2012": "0.0123", "spent2013": "0.0333", "spent2014": "0.0372",
+                            "color":"#3498db", "value": 37},
+                        {"name": "National Arts Council", "level": 4,"radius": 5.7, "spent2012": "0.3181", "spent2013": "0.8419", "spent2014": "01.181",
+                            "color":"#3498db", "value": 1181},
+                        {"name": "National Heritage Board", "level": 4,"small": "true", "spent2012": "0.0115", "spent2013": "0.0292", "spent2014": "0.0461",
+                            "color":"#3498db", "value": 46},
+                        {"name": "People's Association", "level": 4,"radius": 0.00001, "spent2012": "0.0322", "spent2013": "0.1126", "spent2014": "0.0711",
+                            "color":"#3498db", "value": 71},
+                        {"name": "Singapore Sports Council", "level": 4,"radius": 0.02, "spent2012": "0.2280", "spent2013": "0.3411", "spent2014": "0.6036",
+                            "color":"#3498db", "value": 603}
+                    ]
+                },
+                {
+                    "name": "Ministry of Health",
+                    "level": 3,
+                    "radius": 12.6,
+                    "spent2012": "04.802",
+                    "spent2013": "05.807",
+                    "spent2014": "07.183",
+                    "color":"#536DFE",
+                    "children": [
+                        {"name": "Health Promotion Board", "level": 4, "small": "true", "spent2012": "0.0660", "spent2013": "0.0761", "spent2014": "0.0833",
+                            "color":"#536DFE", "value": 83},
+                        {"name": "Health Sciences Authority", "level": 4,"radius": 5.7, "spent2012": "0.3652", "spent2013": "0.4436", "spent2014": "0.5281",
+                            "color":"#536DFE", "value": 528},
+                        {"name": "Singapore Dental Council", "level": 4, "small": "true", "spent2012": "0.0800", "spent2013": "0.1323", "spent2014": "0.1185",
+                            "color":"#536DFE", "value": 118},
+                        {"name": "Singapore Medical Council", "level": 4,"radius": 0.00001, "spent2012": "03.581", "spent2013": "04.431", "spent2014": "05.294",
+                            "color":"#536DFE", "value": 5294},
+                        {"name": "Singapore Nursing Board", "level": 4,"radius": 0.00001, "spent2012": "03.581", "spent2013": "04.431", "spent2014": "05.294",
+                            "color":"#536DFE", "value": 5294},
+                        {"name": "TCM Practitioners Board", "level": 4,"radius": 0.02, "spent2012": "0.6173", "spent2013": "0.7246", "spent2014": "01.159",
+                            "color":"#536DFE", "value": 1159}
+                    ]
+                },
+                {
+                    "name": "Ministry of Law",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Intellectual Property Office of Singapore", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Singapore Academy of Law", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Singapore Land Authority", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Ministry of National Development",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Agri-Food and Veterinary Authority of Singapore", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Board of Architects", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Building and Construction Authority (BCA)", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Council for Estate Agencies (CEA)", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Housing and Development Board (HDB)", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334},
+                        {"name": "National Parks Board (NPB)", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Professional Engineers Board, Singapore", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Strata Titles Boards", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Urban Redevelopment Authority (URA)", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Prime Minister's office",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Singapore Civil Service College", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Corrupt Practices Investigation Bureau", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Elections Department", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Justices Of The Peace, Singapore", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Monetary Authority of Singapore", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334},
+                        {"name": "National Security Coordination Secretariat", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "National Climate Change Secretariat", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "National Research Foundation", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "National Population and Talent Division", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Public Service Division", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131}
+                    ]
+                },
+                {
+                    "name": "Ministry of Transport",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Air Accident Investigation Bureau of Singapore", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Civil Aviation Authority of Singapore", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Land Transport Authority", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Maritime and Port Authority of Singapore", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Public Transport Council", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Ministry of Trade and Industry",
+                    "level": 3,
+                    "radius": 3.9,
+                    "spent2012": "02.368",
+                    "spent2013": "01.555",
+                    "spent2014": "02.205",
+                    "color":"#92A1CF",
+                    "children": [
+                        {"name": "Agency for Science, Technology and Research (A*STAR)", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "Competition Commission Of Singapore", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "Economic Development Board", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Energy Market Authority", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Hotels Licensing Board", "level": 4,"small": "true", "spent2012": "0.0277", "spent2013": "0.0352", "spent2014": "0.0490",
+                            "color":"#92A1CF", "value": 49},
+                        {"name": "International Enterprise Singapore (IE)", "level": 4,"radius": 5.7, "spent2012": "0.6950", "spent2013": "0.3501", "spent2014": "0.5257",
+                            "color":"#92A1CF", "value": 527},
+                        {"name": "JTC Corporation", "level": 4,"radius": 0.00001, "spent2012": "0.1300", "spent2013": "0.1359", "spent2014": "0.1652",
+                            "color":"#92A1CF", "value": 200},
+                        {"name": "Sentosa Development Corporation (SDC)", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Singapore Tourism Board (STB)", "level": 4,"radius": 0.00001, "spent2012": "0.1136", "spent2013": "0.1209", "spent2014": "0.1305",
+                            "color":"#92A1CF", "value": 131},
+                        {"name": "Standards, Productivity and Innovation Board (SPRING)", "level": 4,"radius": 0.02, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
+                            "color":"#92A1CF", "value": 1334}
+                    ]
+                },
+                {
+                    "name": "Ministry of the Environment and Water Resources",
+                    "level": 3,
+                    "radius": 2.6,
+                    "spent2012": "01.193",
+                    "spent2013": "01.280",
+                    "spent2014": "01.496",
+                    "color":"#2980b9",
+                    "children": [
+                        {"name": "National Environment Agency (NEA)", "level": 4,"small": "true", "spent2012": "0.0170", "spent2013": "0.0176", "spent2014": "0.0200",
+                            "color":"#2980b9", "value": 20},
+                        {"name": "Public Utilities Board (PUB)", "level": 4,"radius": 0.02, "spent2012": "0.3637", "spent2013": "0.3235", "spent2014": "0.4285",
+                            "color":"#2980b9", "value": 428}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Organs of State",
+            "level": 2,
+            "radius": 30.3,
+            "spent2012": "15.724",
+            "spent2013": "16.506",
+            "spent2014": "17.331",
+            "color": "#FF9800",
+            "children": [
+                {"name": "Attorney-General’s Chambers", "level": 4, "radius": 6, "spent2012": "0.2584", "spent2013": "0.1383", "spent2014": "0.1347",
+                    "color":"#27ae60", "value": 134},
+                {"name": "Auditor-General’s Office", "level": 4,"radius": 5.7, "spent2012": "0.0254", "spent2013": "0.0274", "spent2014": "0.0298",
+                    "color":"#27ae60", "value": 30},
+                {"name": "The Cabinet", "level": 4, "small": "true", "spent2012": "0.0010", "spent2013": "0.0011", "spent2014": "0.0012",
+                    "color":"#27ae60", "value": 5},
+                {"name": "Istana", "level": 4, "small": "true", "spent2012": "0.0095", "spent2013": "0.0095", "spent2014": "0.0095",
+                    "color":"#27ae60", "value": 10},
+                {"name": "Judiciature", "level": 4,"radius": 0.00001, "spent2012": "0.2028", "spent2013": "0.1901", "spent2014": "0.2028",
+                    "color":"#27ae60", "value": 203},
+                {"name": "Parliament Of Singapore", "level": 4,"radius": 5.7, "spent2012": "0.0343", "spent2013": "0.0342", "spent2014": "0.0343",
+                    "color":"#27ae60", "value": 34},
+                {"name": "Public Service Commission", "level": 4,"small": "true", "spent2012": "0.0019", "spent2013": "0.0020", "spent2014": "0.0019",
+                    "color":"#27ae60", "value": 5}
+            ]
+        }
+    ]
 }

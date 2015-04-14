@@ -13,7 +13,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>Frequency: </strong>" + d.radius;
+    return "$" + d.spent2014 + " Billion";
   }); 
 
 var diagonal = d3.svg.diagonal()
@@ -120,7 +120,7 @@ function update(source) {
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .call(wrap, 150)
+      //.call(wrap, 150)
       .style("fill-opacity", 1e-6);
 
   // Transition nodes to their new position.
@@ -129,7 +129,7 @@ function update(source) {
       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", function(d) { return d.radius; })
+      .attr("r", function(d) { return 10; })
       .style("fill", function(d) { return d.color; });
 
   nodeUpdate.select("text")
@@ -154,7 +154,7 @@ function update(source) {
   // Enter any new links at the parent's previous position.
   link.enter().insert("path", "g")
       .attr("class", "link")
-      .style("stroke-width", function(d) { return d.target.radius; })
+      .style("stroke-width", function(d) { return 5; })
       .attr("d", function(d) {
         var o = {x: source.x0, y: source.y0};
         return diagonal({source: o, target: o});

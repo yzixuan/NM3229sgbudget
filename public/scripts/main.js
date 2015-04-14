@@ -51,17 +51,17 @@ function refresh() {
 
         if (percentSpent < 0.01)
             return ("<h4><strong>" + d.name + "</strong></h4>" + 
-                    "<p>< 0.01% of overall budget</p><hr/>" +
-                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
+                "<p>< 0.01% of overall budget</p><hr/>" +
+                "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                     );
         else
-            return ("<h4><strong>" + d.name + "</strong></h4>" + 
+            return ("<h4><strong>" + d.name + "</strong></h4>" +
                     "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                     );
       });
 
@@ -308,16 +308,16 @@ function refresh2() {
             if (percentSpent < 0.01)
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>< 0.01% of overall budget</p><hr/>" +
-                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                         );
             else
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                         );
       });
 
@@ -561,16 +561,16 @@ function refresh3() {
             if (percentSpent < 0.01)
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>< 0.01% of overall budget</p><hr/>" +
-                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                         );
             else
                 return ("<h4><strong>" + d.name + "</strong></h4>" + 
                         "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'>2014: " + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'>2013: " + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'>2012: " + d.spent2012 + " billion</p>"
+                    "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                         );
       });
 

@@ -95,7 +95,7 @@ rect.parent, .grandparent rect {
 
 .children rect.parent {
   fill: none;
-  fill-opacity: .8;
+  fill-opacity: 1.0;
 }
 
 .children:hover rect.child {
@@ -108,7 +108,7 @@ rect.parent, .grandparent rect {
   background: #fff;
   color: #000;
   border-radius: 2px;
-  min-width: 250px;
+  width: 250px;
 }
 
 .d3-tip h4 {
@@ -141,7 +141,6 @@ rect.parent, .grandparent rect {
 }
 
 .alignleft {
-  font-weight: bold;
   float: left;
 }
 .alignright {
