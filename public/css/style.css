@@ -49,17 +49,17 @@ text {
 }
 
 .money {
-  font-family: 'Lato', sans-serif; 
-  font-weight: 400; 
-  font-size: 2.3em;
-  line-height: 110%;
-  display:block;
-  z-index: 100;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 .ministry {
-  font-family: 'Lato', sans-serif; 
-  font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2.3em;
+    line-height: 110%;
+    display:block;
+    z-index: 100;
 }
 
 rect {
