@@ -1,5 +1,5 @@
 var margin = {top: 30, right: 0, bottom: 0, left: 0},
-    width = 960,
+    width = 900,
     height = 520 - margin.top - margin.bottom,
     formatNumber = d3.format(",d"),
     transitioning;
@@ -19,6 +19,11 @@ var treemap = d3.layout.treemap()
     .round(false);
 
 var jsonFile = "data/SG2012.json";
+
+function resetAll() {
+    var div = document.getElementById('content');
+    div.innerHTML = "hello";
+}
 
 refresh(jsonFile);
 
@@ -210,7 +215,7 @@ function refresh(jsonFile) {
                     if (d.small == "true")
                         return "";
                     else
-                        return "Expenditure: ";
+                        return "Spent: ";
                 })
                 .attr("dy", function(d) {
                     if (d.small == "true")
