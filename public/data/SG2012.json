@@ -74,7 +74,7 @@
       "color":"#00BCD4", "value": 372},
       {"name": "Other Operating Expenditure", "level": 4, "fontsize": 1.4, "spent2012": "0.0940", "spent2013": "0.0986", "spent2014": "0.1115",
       "color":"#00BCD4", "value": 94},
-      {"name": "Transfers", "level": 4,"radius": 0.00001, "spent2012": "01.188", "spent2013": "01.378", "spent2014": "01.456",
+      {"name": "Transfers", "level": 4,"radius": 0.00001, "spent2012": "1.188", "spent2013": "1.378", "spent2014": "1.456",
       "color":"#00BCD4", "value": 1188},
       {"name": "Development Expenditure", "level": 4, "fontsize": 1.4, "small": "true", "spent2012": "0.0388", "spent2013": "0.0456", "spent2014": "0.0655",
       "color":"#00BCD4", "value": 40}

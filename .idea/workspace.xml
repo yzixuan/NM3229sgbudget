@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a81bc05-9c06-461d-bb3e-61d5738868f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/scripts/2013.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/scripts/2014.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/data/SG2012.json" afterPath="$PROJECT_DIR$/public/data/SG2012.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/data/SG2013.json" afterPath="$PROJECT_DIR$/public/data/SG2013.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/scripts/main.js" afterPath="$PROJECT_DIR$/public/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NM3229sgbudget.iws" />
@@ -28,21 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SG2012.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/data/SG2012.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-140.0" vertical-offset="0" max-vertical-offset="6285">
-              <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80360067" vertical-offset="424" max-vertical-offset="1050">
-              <caret line="442" column="22" selection-start-line="442" selection-start-column="22" selection-end-line="442" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.61374795" vertical-offset="0" max-vertical-offset="1050">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -72,21 +61,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/scripts/2014.js">
+      <file leaf-file-name="SG2012.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/data/SG2012.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5040">
-              <caret line="255" column="34" selection-start-line="255" selection-start-column="34" selection-end-line="255" selection-end-column="34" />
+            <state vertical-scroll-proportion="-6.25" vertical-offset="75" max-vertical-offset="6285">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/scripts/2013.js">
+      <file leaf-file-name="SG2013.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/data/SG2013.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5040">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state vertical-scroll-proportion="-17.5" vertical-offset="60" max-vertical-offset="6225">
+              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -110,10 +99,11 @@
         <option value="$PROJECT_DIR$/public/tree/index.html" />
         <option value="$PROJECT_DIR$/public/scripts/d3.tip.v0.6.3.js" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/public/data/SG2012.json" />
         <option value="$PROJECT_DIR$/public/scripts/2013.js" />
         <option value="$PROJECT_DIR$/public/scripts/2014.js" />
         <option value="$PROJECT_DIR$/public/scripts/main.js" />
+        <option value="$PROJECT_DIR$/public/data/SG2012.json" />
+        <option value="$PROJECT_DIR$/public/data/SG2013.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
@@ -435,16 +425,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/data/SG2012.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-140.0" vertical-offset="0" max-vertical-offset="6285">
-          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+        <state vertical-scroll-proportion="-6.25" vertical-offset="75" max-vertical-offset="6285">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/data/SG2013.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5" vertical-offset="60" max-vertical-offset="6225">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80360067" vertical-offset="424" max-vertical-offset="1050">
-          <caret line="442" column="22" selection-start-line="442" selection-start-column="22" selection-end-line="442" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.61374795" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
