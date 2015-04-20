@@ -18,6 +18,15 @@ var treemap = d3.layout.treemap()
     .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
     .round(false);
 
+var descriptionArray = [
+    "Focuses on human needs in the growth and progression of society",
+    "Maintains peace within and the management of external relationships and dealings",
+    "Promote economic growth by improving factors like health, education, working conditions, domestic and international policies and market conditions.",
+    "Maintains control of the finance, administration, internal security and law portfolios of the city state.",
+    "Formulates and implements education policies. Also controls & administers Government-aided schools and institutes. It also registers private schools.",
+    "Guides Singapore’s land use planning, urban redevelopment and building conservation, deliver affordable and quality public housing"
+];
+
 document.getElementById('content2013').style.display = 'none';
 document.getElementById('content2014').style.display = 'none';
 
@@ -63,6 +72,10 @@ function refresh() {
         var percentSpent = (d.spent2012/50.11*100).toFixed(2);
         var change1 = ((d.spent2013 - d.spent2012)/(d.spent2012)*100).toFixed(2);
         var change2 = ((d.spent2014 - d.spent2013)/(d.spent2013)*100).toFixed(2);
+
+        var id = 0;
+        if (d.id != undefined)
+            id = d.id;
         
         var color2, sign2 = "";
         if (change2 > 0) {
@@ -83,17 +96,20 @@ function refresh() {
 
         if (percentSpent < 0.01)
             return ("<h4><strong>" + d.name + "</strong></h4>" +
-                "<p>< 0.01% of overall budget</p><hr/>" +
+                "<p>" + descriptionArray[id] + "</p>" +
+                "<p>(less than 0.01% of total budget)</p><hr/>" +
                 "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
                 "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
                 "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                     );
         else
             return ("<h4><strong>" + d.name + "</strong></h4>" +
-                    "<p>" + percentSpent + "% of overall budget" + "</p><hr/>" +
-                    "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
+                    "<p class='percentage'>(" + percentSpent + "% of total budget" + ")</p>" +
+                    "<p class='description'>" + descriptionArray[id] + "</p><hr/>" +
+                    "<p class='alignleft'><strong>Expenditure: </strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up3'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
                     );
       });
 
@@ -243,7 +259,7 @@ function refresh() {
                     if (d.small == "true")
                         return "";
                     else
-                        return "Spent: ";
+                        return "Expense: " + "$" + d.spent2012 + " billion";
                 })
                 .attr("dy", function(d) {
                     if (d.small == "true")
@@ -252,16 +268,26 @@ function refresh() {
                         return 60;})
                 .attr("dx", 10);
 
+            text_node = g.append("text")
+                .attr("x", function(t) {
+                    return t.x + 12 + "px" })
+                .attr("y", function(t) {
+                    return t.y + 12 + "px" });
+
             text_node.append("tspan")
                 .attr("class", "money")
                 .text(function (d) {
                     if (d.small == "true")
                         return "";
                     else
-                        return "$" + d.spent2012 + " billion";
+                        return "(" + (d.spent2012/50.11*100).toFixed(2) + " % of total budget)";
                 })
-                .attr("dy", 0)
-                .attr("dx", 0);
+                .attr("dy", function(d) {
+                    if (d.small == "true")
+                        return 60;
+                    else
+                        return 80;})
+                .attr("dx", 10);
 
             function transition(d) {
                 if (transitioning || !d) return;

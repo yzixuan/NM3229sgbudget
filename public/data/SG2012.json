@@ -6,6 +6,7 @@
  "children": [
   {
    "name": "Social Development",
+   "id": 0,
    "level": 2,
    "radius": 48.2,
    "spent2012": "22.414",
@@ -15,6 +16,7 @@
    "children": [
     {
      "name": "Education",
+     "id": 4,
      "level": 3,
      "radius": 20.5,
      "revenue": "0.087",
@@ -126,6 +128,7 @@
     },
     {
       "name": "National Development",
+      "id": 5,
       "level": 3,
       "fontsize": 1.6,
       "spent2012": "2.368",
@@ -170,6 +173,7 @@
   },
   {
    "name": "Security & External Relations",
+   "id": 1,
    "level": 2,
    "fontsize": 1.8,
    "spent2012": "15.724",
@@ -243,6 +247,7 @@
   },
   {
    "name": "Economic Development",
+   "id": 2,
    "level": 2,
    "fontsize": 1.8,
    "spent2012": "9.953",
@@ -316,6 +321,7 @@
   },
   {
    "name": "Government Administration",
+   "id": 3,
    "level": 2,
    "fontsize": 1.4,
    "small": "true",
