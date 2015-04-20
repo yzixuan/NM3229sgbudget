@@ -18,12 +18,9 @@ var treemap = d3.layout.treemap()
     .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
     .round(false);
 
-document.getElementById('content2013').style.display = 'none';
-document.getElementById('content2014').style.display = 'none';
+function show2013() {
 
-function show2012() {
-
-    document.getElementById("chart2012").innerHTML = "";
+    document.getElementById("chart2013").innerHTML = "";
 
     margin = {top: 30, right: 0, bottom: 0, left: 0},
         width = 900,
@@ -45,16 +42,16 @@ function show2012() {
         .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
         .round(false);
 
-    refresh();
-    document.getElementById('newstitle').innerHTML = "BUDGET 2012 IN THE NEWS";
-    document.getElementById('content2012').style.display = 'block';
-    document.getElementById('content2013').style.display = 'none';
+    refresh2013();
+    document.getElementById('newstitle').innerHTML = "BUDGET 2013 IN THE NEWS";
+    document.getElementById('content2012').style.display = 'none';
+    document.getElementById('content2013').style.display = 'block';
     document.getElementById('content2014').style.display = 'none';
 }
 
-refresh();
+refresh2013();
 
-function refresh() {
+function refresh2013() {
 
     var tip = d3.tip()
       .attr('class', 'd3-tip')
@@ -97,7 +94,7 @@ function refresh() {
                     );
       });
 
-    var svg = d3.select("#chart2012").append("svg")
+    var svg = d3.select("#chart2013").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.bottom + margin.top)
         .style("margin-left", -margin.left + "px")
@@ -122,7 +119,7 @@ function refresh() {
         .attr("dy", ".35em");
 
 
-    d3.json("data/SG2012.json", function (root) {
+    d3.json("data/SG2013.json", function (root) {
         initialize(root);
         accumulate(root);
         layout(root);
@@ -258,7 +255,7 @@ function refresh() {
                     if (d.small == "true")
                         return "";
                     else
-                        return "$" + d.spent2012 + " billion";
+                        return "$" + d.spent2013 + " billion";
                 })
                 .attr("dy", 0)
                 .attr("dx", 0);
