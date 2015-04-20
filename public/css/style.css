@@ -63,7 +63,6 @@ text {
   width: 900px;
   height: 500px;
   background: none;
-  margin: 0 auto;
 }
 
 .media {
@@ -77,9 +76,8 @@ text {
 }
 
 .mediabox {
-    width: 332px;
     min-height: 700px;
-    margin: 0 auto;
+    padding: 10px 20px;
     border-right: 1px solid #95a5a6;
 }
 
@@ -188,23 +186,24 @@ rect.parent, .grandparent rect {
 }
 
 .circle {
-    width: 72px;
-    height: 72px;
-    border-radius: 36px;
-    font-size:20px;
-    line-height:64px;
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    font-size: 16px;
+    line-height:50px;
     text-align:center;
     color: #e74c3c;
-    background: transparent;
-    border: 5px solid #e74c3c;
-    margin: 20px 30px;
+    background: #f5f5f5;
+    border: none;
+    margin: 10px 70px 20px 0px;
     cursor: pointer;
+    border: 3px solid #e74c3c;
 }
 
 .circle:hover {
     color: #fff;
-    background: #e74c3c;
-    border: 5px solid white;
+    background: lightcoral;
+    border: 3px solid lightcoral;
 }
 
 .circle.active {
@@ -214,7 +213,7 @@ rect.parent, .grandparent rect {
 
 .nav-tabs>li>a {
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .nav-tabs>li>a:hover {
@@ -241,6 +240,18 @@ rect.parent, .grandparent rect {
     zoom:1;
 }
 
-.nav-tabs, .nav-pills {
-    text-align:center;
+li::before{
+    content: '';
+    position: absolute;
+    top: 1.4em;
+    left: -5em;
+    width: 5em;
+    height: .3em;
+    background: #e74c3c;
+    z-index: -1;
+}
+
+
+li:first-child::before {
+    display: none;
 }

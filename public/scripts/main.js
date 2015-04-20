@@ -20,14 +20,57 @@ var treemap = d3.layout.treemap()
 
 var jsonFile = "data/SG2012.json";
 
-function resetAll() {
-    var div = document.getElementById('content');
-    div.innerHTML = "hello";
+document.getElementById('content2013').style.display = 'none';
+document.getElementById('content2014').style.display = 'none';
+
+function show2012() {
+
+    document.getElementById("chart2012").innerHTML = "";
+
+    margin = {top: 30, right: 0, bottom: 0, left: 0},
+        width = 900,
+        height = 520 - margin.top - margin.bottom,
+        formatNumber = d3.format(",d"),
+        transitioning;
+
+    x = d3.scale.linear()
+        .domain([0, width])
+        .range([0, width]);
+
+    y = d3.scale.linear()
+        .domain([0, height])
+        .range([0, height]);
+
+    treemap = d3.layout.treemap()
+        .children(function(d, depth) { return depth ? null : d._children; })
+        .sort(function(a, b) { return a.value - b.value; })
+        .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
+        .round(false);
+
+    refresh();
+    document.getElementById('newstitle').innerHTML = "BUDGET 2012 IN THE NEWS";
+    document.getElementById('content2012').style.display = 'block';
+    document.getElementById('content2013').style.display = 'none';
+    document.getElementById('content2014').style.display = 'none';
 }
 
-refresh(jsonFile);
+function show2013() {
+    document.getElementById('newstitle').innerHTML = "BUDGET 2013 IN THE NEWS";
+    document.getElementById('content2012').style.display = 'none';
+    document.getElementById('content2013').style.display = 'block';
+    document.getElementById('content2014').style.display = 'none';
+}
 
-function refresh(jsonFile) {
+function show2014() {
+    document.getElementById('newstitle').innerHTML = "BUDGET 2014 IN THE NEWS";
+    document.getElementById('content2012').style.display = 'none';
+    document.getElementById('content2013').style.display = 'none';
+    document.getElementById('content2014').style.display = 'block';
+}
+
+refresh();
+
+function refresh() {
 
     var tip = d3.tip()
       .attr('class', 'd3-tip')
@@ -55,7 +98,7 @@ function refresh(jsonFile) {
 
 
         if (percentSpent < 0.01)
-            return ("<h4><strong>" + d.name + "</strong></h4>" + 
+            return ("<h4><strong>" + d.name + "</strong></h4>" +
                 "<p>< 0.01% of overall budget</p><hr/>" +
                 "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
                 "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
@@ -92,7 +135,8 @@ function refresh(jsonFile) {
     grandparent.append("text")
         .attr("x", 6)
         .attr("y", 6 - 20)
-        .attr("dy", ".35em");    
+        .attr("dy", ".35em");
+
 
     d3.json(jsonFile, function (root) {
         initialize(root);
@@ -303,5 +347,4 @@ function refresh(jsonFile) {
                 ? name(d.parent) + " > " + d.name
                 : d.name;
         }
-    });
-}
+    }); }
