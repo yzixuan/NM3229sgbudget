@@ -65,6 +65,12 @@ function refresh2014() {
             if (d.id != undefined)
                 id = d.id;
 
+            var revenue;
+            if (d.revenue != undefined)
+                revenue = "<strong>Estimated Revenue: </strong>$" + d.revenue;
+            else
+                revenue = "No revenue estimates available.";
+
         var color2, sign2 = "";
         if (change2 > 0) {
             color2 = "green";
@@ -86,18 +92,21 @@ function refresh2014() {
             return ("<h4><strong>" + d.name + "</strong></h4>" +
                 "<p>" + descriptionArray[id] + "</p>" +
                 "<p>(less than 0.01% of total budget)</p><hr/>" +
-                "<p class='alignleft'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                "<p class='alignleft up'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                "<p class='alignleft up2'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
+                "<p class='alignleft'><strong>Expenditure: </strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
+                "<p class='alignleft up'><strong>2014 - </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                "<p class='alignleft up2'><strong>2013 - </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                "<p class='alignleft up3'><strong>2012 - </strong>$" + d.spent2012 + " billion</p><hr/>" +
+                "<p class='description'>" + revenue + "</p>"
                 );
         else
             return ("<h4><strong>" + d.name + "</strong></h4>" +
                 "<p class='percentage'>(" + percentSpent + "% of total budget" + ")</p>" +
                 "<p class='description'>" + descriptionArray[id] + "</p><hr/>" +
                 "<p class='alignleft'><strong>Expenditure: </strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
-                "<p class='alignleft up'><strong>2014: </strong>" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                "<p class='alignleft up2'><strong>2013: </strong>" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                "<p class='alignleft up3'><strong>2012: </strong>" + d.spent2012 + " billion</p>"
+                "<p class='alignleft up'><strong>2014 - </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                "<p class='alignleft up2'><strong>2013 - </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                "<p class='alignleft up3'><strong>2012 - </strong>$" + d.spent2012 + " billion</p><hr/>" +
+                "<p class='description'>" + revenue + "</p>"
                 );
       });
 
@@ -210,12 +219,12 @@ function refresh2014() {
                 .on('mouseover', tip.show)
                 .on('mouseout', tip.hide);
 
+            // NAME OF THE SECTOR
             text_node = g.append("text")
                 .attr("x", function(t) {
                     return t.x + 12 + "px" })
                 .attr("y", function(t) {
                     return t.y + 12 + "px" });
-
             text_node.append("tspan")
                 .attr("class", "ministry")
                 .style("font-size", function(d) {
@@ -231,15 +240,16 @@ function refresh2014() {
                     if (d.small == "true")
                         return 20;
                     else
-                        return 35;})
+                        return 30;})
                 .attr("dx", 10);
 
+
+            // EXPENDITURE (EXPENSE IN SGD)
             text_node = g.append("text")
                 .attr("x", function(t) {
                     return t.x + 12 + "px" })
                 .attr("y", function(t) {
                     return t.y + 12 + "px" });
-
             text_node.append("tspan")
                 .attr("class", "money")
                 .style("font-weight", "bold")
@@ -247,25 +257,53 @@ function refresh2014() {
                     if (d.small == "true")
                         return "";
                     else
-                        return "Spent: ";
+                        return "Expenditure: " + "$" + d.spent2014 + " billion";
                 })
                 .attr("dy", function(d) {
                     if (d.small == "true")
-                        return 40;
+                        return 35;
                     else
-                        return 60;})
+                        return 55;})
                 .attr("dx", 10);
 
+            // PERCENTAGE OF BUDGET
+            text_node = g.append("text")
+                .attr("x", function(t) {
+                    return t.x + 12 + "px" })
+                .attr("y", function(t) {
+                    return t.y + 12 + "px" });
             text_node.append("tspan")
                 .attr("class", "money")
                 .text(function (d) {
                     if (d.small == "true")
                         return "";
                     else
-                        return "$" + d.spent2014 + " billion";
+                        return "(" + (d.spent2014/50.11*100).toFixed(2) + " % of total budget)";
                 })
-                .attr("dy", 0)
-                .attr("dx", 0);
+                .attr("dy", function(d) {
+                    if (d.small == "true")
+                        return 55;
+                    else
+                        return 75;})
+                .attr("dx", 10);
+
+            // ESTIMATED REVENUE (IF POSSIBLE)
+            text_node = g.append("text")
+                .attr("x", function(t) {
+                    return t.x + 12 + "px" })
+                .attr("y", function(t) {
+                    return t.y + 12 + "px" });
+            text_node.append("tspan")
+                .attr("class", "money")
+                .style("font-weight", "bold")
+                .text(function (d) {
+                    if (d.small == "true" || d.revenue == undefined || d.small2 == "true")
+                        return "";
+                    else
+                        return "Est Revenue: " + "$" + d.revenue;
+                })
+                .attr("dy", 105)
+                .attr("dx", 10);
 
             function transition(d) {
                 if (transitioning || !d) return;
