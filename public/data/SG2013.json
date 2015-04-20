@@ -121,7 +121,7 @@
                    "color":"#536DFE", "value": 76},
                {"name": "Grants, Subventions & Injections", "level": 4, "fontsize": 1, "spent2012": "0.3652", "spent2013": "0.4436", "spent2014": "0.5281",
                    "color":"#536DFE", "value": 443},
-               {"name": "Other Operating", "level": 4, "fontsize": 0.7, "small": "true", "spent2012": "0.0800", "spent2013": "0.1323", "spent2014": "0.1185",
+               {"name": "Other Operating Exp", "level": 4, "fontsize": 0.7, "small": "true", "spent2012": "0.0800", "spent2013": "0.1323", "spent2014": "0.1185",
                    "color":"#536DFE", "value": 132},
                {"name": "Transfers", "level": 4,"radius": 0.00001, "spent2012": "03.581", "spent2013": "04.431", "spent2014": "05.294",
                    "color":"#536DFE", "value": 4431},

@@ -104,20 +104,20 @@ function refresh() {
             return ("<h4><strong>" + d.name + "</strong></h4>" +
                 "<p>" + descriptionArray[id] + "</p>" +
                 "<p>(less than 0.01% of total budget)</p><hr/>" +
-                "<p class='alignleft'><strong>Expenditure: </strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
-                "<p class='alignleft up'><strong>2014 - </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                "<p class='alignleft up2'><strong>2013 - </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                "<p class='alignleft up3'><strong>2012 - </strong>$" + d.spent2012 + " billion</p><hr/>" +
+                "<p class='alignleft'><strong>Expenditure:</strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
+                "<p class='alignleft up'><strong>2014: </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                "<p class='alignleft up2'><strong>2013: </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                "<p class='alignleft up3'><strong>2012: </strong>$" + d.spent2012 + " billion</p><hr/>" +
                 "<p class='description'>" + revenue + "</p>"
                     );
         else
             return ("<h4><strong>" + d.name + "</strong></h4>" +
                     "<p class='percentage'>(" + percentSpent + "% of total budget" + ")</p>" +
                     "<p class='description'>" + descriptionArray[id] + "</p><hr/>" +
-                    "<p class='alignleft'><strong>Expenditure: </strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
-                    "<p class='alignleft up'><strong>2014 - </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up2'><strong>2013 - </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
-                    "<p class='alignleft up3'><strong>2012 - </strong>$" + d.spent2012 + " billion</p><hr/>" +
+                    "<p class='alignleft'><strong>Expenditure:</strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
+                    "<p class='alignleft up'><strong>2014: </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up2'><strong>2013: </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
+                    "<p class='alignleft up3'><strong>2012: </strong>$" + d.spent2012 + " billion</p><hr/>" +
                     "<p class='description'>" + revenue + "</p>"
                     );
       });
@@ -301,7 +301,7 @@ function refresh() {
                     if (d.small == "true" || d.revenue == undefined || d.small2 == "true")
                         return "";
                     else
-                        return "Estimated Revenue: " + "$" + d.revenue;
+                        return "Est Revenue: " + "$" + d.revenue;
                 })
                 .attr("dy", 110)
                 .attr("dx", 10);
