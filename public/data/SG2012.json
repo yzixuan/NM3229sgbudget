@@ -78,7 +78,7 @@
      "spent2014": "1.818",
      "color":"#00BCD4",
      "children": [
-      {"name": "Manpower Exp", "level": 4, "id": 30, "fontsize": 1.2, "spent2012": "0.1036", "spent2013": "0.0136", "spent2014": "0.1566",
+      {"name": "Manpower Exp", "level": 4, "id": 30, "small": "true", "fontsize": 1.2, "spent2012": "0.1036", "spent2013": "0.0136", "spent2014": "0.1566",
       "color":"#00BCD4", "value": 104},
       {"name": "Grants, Subventions & Capital Injections", "id": 31, "level": 4, "fontsize": 1.6, "spent2012": "0.3720", "spent2013": "0.0327", "spent2014": "0.0284",
       "color":"#00BCD4", "value": 372},
