@@ -310,6 +310,28 @@ function refresh2014() {
                 if (transitioning || !d) return;
                 transitioning = true;
 
+                if (d.id != undefined) {
+                    if (d.id < 23) {
+                        //var contentName = "#content" + d.id;
+                        $('.variablecontent').hide();
+                        //$(contentName).show();
+                        document.getElementById('currentcontent').innerHTML =
+                            "<h4 class='country'>" + d.name + " 2014</h4>" +
+                            "<h5>" + descriptionArray[d.id] + "</h5><hr/>" +
+                            "<h4 class='media-heading'>Ministry Expenditure:</h4>" +
+                            "<p>$" + d.spent2012 + " billion</p>" +
+                            "<h4 class='media-heading'>Ministry Estimated Revenue:</h4>" +
+                            "<p>$" + d.revenue + "</p>";
+                        currentview = d.id;
+                        $('#currentcontent').show();
+                    } else if (0 <= currentview <= 3) {
+                        //var contentName = "#content" + d.id;
+                        $('.variablecontent').hide();
+                        //$(contentName).show();
+                        $('#content2014').show();
+                    }
+                }
+
                 var g2 = display(d),
                     t1 = g1.transition().duration(750),
                     t2 = g2.transition().duration(750);

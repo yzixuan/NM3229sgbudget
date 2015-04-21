@@ -36,7 +36,9 @@
       "color":"#2196F3", "value": 3180},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.3, "spent2012": "0.8330", "spent2013": "0.8790", "spent2014": "0.9730",
       "color":"#2196F3", "value": 833}
-     ]
+     ],
+     "news": "MOE to Enhance Financial Assistance and Learning Support to Benefit More Students",
+     "newslink" : "http://www.moe.gov.sg/media/press/2012/03/moe-to-enhance-financial-assistance-and-learning-support.php"
     },
     {
      "name": "Communication & Information",

@@ -44,6 +44,7 @@ text {
 .country {
   font-weight: bold;
   color: #e74c3c;
+  text-transform: uppercase;
 }
 
 .title {

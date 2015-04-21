@@ -18,6 +18,8 @@ var treemap = d3.layout.treemap()
     .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
     .round(false);
 
+var currentview;
+
 var descriptionArray = [
     "Focuses on human needs in the growth and progression of society.",
     "Maintains peace within and the management of external relationships and dealings.",
@@ -346,9 +348,25 @@ function refresh() {
                 transitioning = true;
 
                 if (d.id != undefined) {
-                    var contentName = "#content" + d.id;
-                    $('.variablecontent').hide();
-                    $(contentName).show();
+                    if (d.id < 23) {
+                        //var contentName = "#content" + d.id;
+                        $('.variablecontent').hide();
+                        //$(contentName).show();
+                        document.getElementById('currentcontent').innerHTML =
+                            "<h4 class='country'>" + d.name + " 2012</h4>" +
+                            "<h5>" + descriptionArray[d.id] + "</h5><hr/>" +
+                            "<h4 class='media-heading'>Ministry Expenditure:</h4>" +
+                            "<p>$" + d.spent2012 + " billion</p>" +
+                            "<h4 class='media-heading'>Ministry Estimated Revenue:</h4>" +
+                            "<p>$" + d.revenue + "</p>";
+                        currentview = d.id;
+                        $('#currentcontent').show();
+                    } else if (0 <= currentview <= 3) {
+                        //var contentName = "#content" + d.id;
+                        $('.variablecontent').hide();
+                        //$(contentName).show();
+                        $('#content2012').show();
+                    }
                 }
 
                 var g2 = display(d),
