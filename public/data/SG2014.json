@@ -34,7 +34,9 @@
       "color":"#2196F3", "value": 3436},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.4, "spent2012": "0.833", "spent2013": "0.879", "spent2014": "0.973",
       "color":"#2196F3", "value": 973}
-     ]
+     ],
+     "news": "More help with education costs for lower and middle-income families",
+     "newslink": "http://www.straitstimes.com/the-big-story/budget-2014/story/budget-2014-more-help-education-costs-lower-and-middle-income-famili"
     },
     {
      "name": "Comms & Info",
@@ -83,7 +85,9 @@
       "color":"#00BCD4", "value": 1456},
       {"name": "Development Exp", "level": 4, "id": 34, "fontsize": 1.2, "spent2012": "0.0388", "spent2013": "0.0456", "spent2014": "0.0655",
       "color":"#00BCD4", "value": 115}
-     ]
+     ],
+     "news": "Govt sets up S$8b Pioneer Generation Fund for seniors",
+     "newslink": "http://www.channelnewsasia.com/news/specialreports/budget2014/news/budget-2014-govt-sets-up/1007724.html"
     },
     {
       "name": "Culture, Community & Youth",
@@ -106,7 +110,9 @@
       "color":"#3498db", "value": 121},
       {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "0.2280", "spent2013": "0.3411", "spent2014": "0.6036",
       "color":"#3498db", "value": 653}
-     ]
+     ],
+        "news": "$1.5 billion to give Singaporeans easier access to sports facilities",
+        "newslink": "http://www.straitstimes.com/the-big-story/budget-2014/story/singapore-budget-2014-15-billion-give-singaporeans-easier-access-spo"
     },
     {
       "name": "Health", 
@@ -151,7 +157,9 @@
       "color":"#92A1CF", "value": 181},
       {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
       "color":"#92A1CF", "value": 1334}
-     ]
+     ],
+     "news": "10 things about MND's budget debate",
+     "newslink": "http://www.mnd.gov.sg/budgetdebate2014/cnt_10things.htm"
     },
     {
       "name": " Environment & Water", 
@@ -210,7 +218,9 @@
       "color":"#d35400", "value": 10},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 0, "small": "true", "spent2012": "0.4900", "spent2013": "0.4400", "spent2014": "0.4290",
       "color":"#d35400", "value": 429}
-     ]
+     ],
+     "news": "Steady defence spending will continue",
+     "newslink": "http://news.asiaone.com/news/singapore/singapore-budget-2014-steady-defence-spending-will-continue?akamai-feo=off"
     },
     {
       "name": "Home Affairs", 
@@ -232,7 +242,9 @@
       "color":"#FF9800", "value": 40},
       {"name": "Development Expenditure", "level": 4, "fontsize": 1, "spent2012": "0.1903", "spent2013": "0.3398", "spent2014": "0.4196",
       "color":"#FF9800", "value": 420}
-     ]
+     ],
+        "news": "ICA to study viability of further re-registration of NRICs",
+        "newslink": "http://www.straitstimes.com/the-big-story/budget-2014/story/singapore-budget-2014-ica-study-viability-further-re-registration-nr"
       },
     {
       "name": "Foreign Affairs", 
@@ -369,7 +381,9 @@
       "color":"#4CAF50", "value": 10},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.2, "spent2012": "0.0326", "spent2013": "0.0252", "spent2014": "0.0443",
       "color":"#4CAF50", "value": 70}
-     ]
+     ],
+        "news": "Govt looking at mandating progressive wages in landscaping",
+        "newslink": "http://www.straitstimes.com/the-big-story/budget-2014/story/singapore-budget-2014-govt-looking-mandating-progressive-wages-lands"
       },
     {
       "name": "Law", 
@@ -389,7 +403,9 @@
       "color":"#2ecc71", "value": 118},
       {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "0.3267", "spent2013": "0.2706", "spent2014": "0.4371",
       "color":"#2ecc71", "value": 437}
-     ]
+     ],
+        "news": "Changes to law to deal with community disputes being studied",
+        "newslink": "http://www.straitstimes.com/the-big-story/budget-2014/story/singapore-budget-2014-changes-law-deal-community-disputes-being-stud"
       },
     {
       "name": "Organs of State",

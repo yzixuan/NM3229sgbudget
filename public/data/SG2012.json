@@ -51,7 +51,9 @@
      "spent2013": "0.414",
      "spent2014": "0.500",
      "color":"#03A9F4",
-     "value": 450
+     "value": 450,
+     "news": "Singapore projects S$1.2 billion govt IT spending in 2012",
+     "newslink": "http://www.futuregov.asia/articles/singapore-projects-s-1-2-billion-govt-it-spending-in-2012"
     },
     {
      "name": "Manpower*",
@@ -110,7 +112,9 @@
       "color":"#3498db", "value": 50},
       {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "0.2280", "spent2013": "0.3411", "spent2014": "0.6036",
       "color":"#3498db", "value": 228}
-     ]
+     ],
+     "news": "S$62 million budget allotted to National Sports Associations",
+     "newslink": "http://sbr.com.sg/economy/more-news/s62-million-budget-allotted-national-sports-associations"
     },
     {
       "name": "Health",
@@ -155,7 +159,9 @@
       "color":"#92A1CF", "value": 114},
       {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
       "color":"#92A1CF", "value": 1401}
-     ]
+     ],
+     "news": "All HIP projects to be enhanced with additional optional items under the EASE programme",
+     "newslink": "http://www.iproperty.com.sg/news/5413/All-HIP-projects-to-be-enhanced-with-additional-optional-items-under-the-EASE-programme"
     },
     {
       "name": " Environment and Water",
@@ -179,7 +185,9 @@
       "color":"#2980b9", "value": 22},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.9, "spent2012": "0.3637", "spent2013": "0.3235", "spent2014": "0.4285",
       "color":"#2980b9", "value": 364}
-     ]
+     ],
+     "news": "New Carbon Emissions-based Vehicle Scheme",
+     "newslink": "https://www.facebook.com/MEWRsingapore/posts/321419721243623"
   }
    ]
   },
@@ -294,7 +302,9 @@
       "color":"#7B1FA2", "value": 10},
       {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "05.424", "spent2013": "05.372", "spent2014": "05.396",
       "color":"#7B1FA2", "value": 5424}
-     ]
+     ],
+     "news": "$100,800 transport grant to get needy secondary school students back to school",
+     "newslink": "http://www.news.gov.sg/public/sgpc/en/media_releases/agencies/cscdc/press_release/P-20120229-1.html?AuthKey=687f8e41-ee12-df47-8790-74ccc21b3c71"
     },
     {
       "name": "Trade and Industry",
@@ -339,7 +349,9 @@
       "spent2013": "0.5380",
       "spent2014": "0.5591",
       "color":"#9C27B0",
-      "value":494
+      "value":494,
+      "news": "Singapore to reduce foreign worker inflow",
+      "newslink": "https://sg.news.yahoo.com/blogs/singaporescene/singapore-gov-t-tighten-foreign-worker-quota-081803198.html"
     }
    ]
   },
@@ -375,7 +387,9 @@
       "color":"#4CAF50", "value": 38},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1, "radius": 0.02, "spent2012": "0.0326", "spent2013": "0.0252", "spent2014": "0.0443",
       "color":"#4CAF50", "value": 34}
-     ]
+     ],
+     "news": "Increase in CPF Contribution Rates for Older Workers",
+     "newslink": "http://mycpf.cpf.gov.sg/Members/Gen-Info/CPFChanges/Budget2012_CPF.htm"
       },
     {
       "name": "Law",

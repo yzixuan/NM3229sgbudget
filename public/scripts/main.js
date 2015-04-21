@@ -347,6 +347,17 @@ function refresh() {
                 if (transitioning || !d) return;
                 transitioning = true;
 
+                //set news media objects
+                var mediaobject = "";
+
+                if (d.news != undefined) {
+                    mediaobject = "<h5 class='country'>RELEVANT MEDIA</h5>" +
+                    "<div class='media'><div class='pull-left'><a target='_blank'" +
+                    "href='" + d.newslink + "'><img class='media-object' src='img/news.png'></a></div>" +
+                    "<div class='media-body'><h4 class='media-heading'><a target='_blank'" +
+                    "href='" + d.newslink + "'>" + d.news + "</a></h4></div></div>";
+                }
+
                 if (d.id != undefined) {
                     if (d.id < 23) {
                         //var contentName = "#content" + d.id;
@@ -358,7 +369,7 @@ function refresh() {
                             "<h4 class='media-heading'>Ministry Expenditure:</h4>" +
                             "<p>$" + d.spent2012 + " billion</p>" +
                             "<h4 class='media-heading'>Ministry Estimated Revenue:</h4>" +
-                            "<p>$" + d.revenue + "</p>";
+                            "<p>$" + d.revenue + "</p><hr/>" + mediaobject;
                         currentview = d.id;
                         $('#currentcontent').show();
                     } else if (0 <= currentview <= 3) {

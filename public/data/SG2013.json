@@ -35,7 +35,9 @@
                    "color":"#2196F3", "value": 3582},
                {"name": "Development Expenditure", "level": 34, "id": 31, "fontsize": 1.3, "spent2012": "0.8330", "spent2013": "0.8790", "spent2014": "0.9730",
                    "color":"#2196F3", "value": 879}
-           ]
+           ],
+           "news": "Govt to spend S$3b on pre-school sector over next 5 years",
+           "newslink": "http://www.channelnewsasia.com/news/singapore/budget-2013-govt-to-spend/590362.html"
        },
     {
      "name": "Comms & Info",
@@ -48,7 +50,9 @@
      "spent2013": "0.414",
      "spent2014": "0.500",
      "color":"#03A9F4",
-     "value": 414
+     "value": 414,
+     "news": "Govt to invest S$62m in enhancing content in national museums",
+     "newslink": "http://www.channelnewsasia.com/news/specialreports/parliament/news/govt-to-invest-s-62m-in-e/606194.html"
     },
     {
      "name": "Manpower*",
@@ -109,7 +113,9 @@
                    "color":"#3498db", "value": 120},
                {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "0.2280", "spent2013": "0.3411", "spent2014": "0.6036",
                    "color":"#3498db", "value": 346}
-           ]
+           ],
+           "news": "Sports to get $250 million boost, goal is to build strong sporting culture",
+           "newslink": "http://www.straitstimes.com/the-big-story/budget-2013/story/budget-2013-sports-get-250-million-boost-goal-build-strong-sporting-"
        },
        {
            "name": "Health",
@@ -132,7 +138,9 @@
                    "color":"#536DFE", "value": 4431},
                {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.4, "spent2012": "0.6173", "spent2013": "0.7246", "spent2014": "01.159",
                    "color":"#536DFE", "value": 725}
-           ]
+           ],
+           "news": "More funds poured in to meet eldercare and healthcare needs of low-income households",
+           "newslink": "http://www.straitstimes.com/breaking-news/singapore/story/budget-2013-more-funds-poured-meet-eldercare-and-healthcare-needs-low-#sthash.mMVBTPqW.dpuf"
        },
        {
            "name": "National Development",
@@ -156,7 +164,9 @@
                    "color":"#92A1CF", "value": 121},
                {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "01.401", "spent2013": "0.9133", "spent2014": "01.334",
                    "color":"#92A1CF", "value": 913}
-           ]
+           ],
+           "news": "HDB to wrap up lift upgrading programme by end of next year",
+           "newslink": "http://news.asiaone.com/News/AsiaOne+News/Business/Story/A1Story20130329-412220.html"
        },
        {
            "name": " Environment and Water",
@@ -238,7 +248,9 @@
                    "color":"#FF9800", "value": 38},
                {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 0.9, "spent2012": "0.1903", "spent2013": "0.3398", "spent2014": "0.4196",
                    "color":"#FF9800", "value": 340}
-           ]
+           ],
+           "news": "18% increase in MHA budget",
+           "newslink": "http://archives.deccanchronicle.com/130301/news-current-affairs/article/budget-2013-18-increase-mha-budget"
        },
        {
            "name": "Foreign Affairs",
@@ -318,7 +330,9 @@
                    "color":"#7C4DFF", "value": 30},
                {"name": "Development Expenditure", "level": 4, "id": 34, "spent2012": "02.369", "spent2013": "01.949", "spent2014": "02.117",
                    "color":"#7C4DFF", "value": 1950}
-           ]
+           ],
+           "news": "New fund for lifestyle concepts with strong tourism potential",
+           "newslink": "http://www.straitstimes.com/breaking-news/singapore/story/budget-2013-new-fund-lifestyle-concepts-strong-tourism-potential-20130"
        },
        {
            "name": "Comms and Info*",
@@ -340,7 +354,9 @@
            "spent2013": "0.5380",
            "spent2014": "0.5591",
            "color":"#9C27B0",
-           "value":538
+           "value":538,
+           "news": "Foreign worker levies to go up, quotas for services and marine sectors cut",
+           "newslink": "http://www.straitstimes.com/breaking-news/singapore/story/budget-2013-foreign-worker-levies-go-quotas-services-and-marine-sector"
        }
    ]
   },
@@ -376,7 +392,9 @@
                    "color":"#4CAF50", "value": 82},
                {"name": "Development Exp", "level": 4, "id": 34, "fontsize": 0.9, "radius": 0.02, "spent2012": "0.0326", "spent2013": "0.0252", "spent2014": "0.0443",
                    "color":"#4CAF50", "value": 25}
-           ]
+           ],
+           "news": "Budget 2013 Tax Changes",
+           "newslink": "http://www.iras.gov.sg/irasHome/page.aspx?id=14558"
        },
        {
            "name": "Law",
