@@ -82,7 +82,11 @@ text {
 .mediabox {
     min-height: 700px;
     padding: 10px 20px;
-    border-right: 1px solid #95a5a6;
+    border-left: 1px solid #95a5a6;
+}
+
+.treemapbox {
+    padding: 0px 50px;
 }
 
 .money {

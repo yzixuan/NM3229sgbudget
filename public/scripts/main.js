@@ -122,6 +122,7 @@ function refresh() {
                     );
       });
 
+
     var svg = d3.select("#chart2012").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.bottom + margin.top)

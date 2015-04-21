@@ -160,13 +160,13 @@ d3.tip = function() {
     }
   }
 
-  function direction_e() {
-    var bbox = getScreenBBox()
-    return {
-      top:  bbox.e.y - node.offsetHeight / 2,
-      left: bbox.e.x
+    function direction_e() {
+        var bbox = getScreenBBox()
+        return {
+            top:  bbox.e.y - node.offsetHeight / 2,
+            left: bbox.e.x - node.offsetWidth
+        }
     }
-  }
 
   function direction_w() {
     var bbox = getScreenBBox()
