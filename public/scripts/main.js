@@ -25,7 +25,36 @@ var descriptionArray = [
     "Maintains control of the finance, administration, internal security and law portfolios of the city state.",
     "Formulates and implements education policies. Also controls & administers Government-aided schools and institutes. It also registers private schools.",
     "Guides Singapore’s land use planning, urban redevelopment and building conservation, deliver affordable and quality public housing.",
-    ""
+    "Ensures the provision & accessibility of health services, and monitors the quality of health services provided to citizens",
+    "Formulates policies to nurture resilient individuals, strong families and a caring society in Singapore.",
+    "Not to be mistaken as Manpower under Economic Development. Manpower expenditure here refers to expenditure under the Financial Security for Singaporeans Programme.",
+    "Engages Singaporeans through the arts and sports, strengthen community bonds, and promote volunteerism and philanthropy.",
+    "Oversees IT, media and design sectors, public libraries, as well as the Government's information and public communication policies.",
+    "Ensures a clean and hygienic living environment, as well as managing the state's water supply.",
+    "Oversees the state's national defence needs and armed forces. In charge of protecting Singapore's sovereignty and territorial integrity.",
+    "Responsible for public safety, civil defence and immigration matters.",
+    "Conducts and manages diplomatic relations between Singapore and other countries.",
+    "Oversees the development and regulation of civil aviation and air transport, maritime transport and ports, and land transport.",
+    "Formulate policies related to the development of trade and industry.",
+    "Not to be mistaken as Communications and Information expenditure under Social Development. Comms and Info expenditure here refers to the Info-Communications and Media Development Programmes.",
+    "Formulates labour policies related to the workforce in Singapore. Also oversees immigration matters & issue of Employment Passes to foreign talents.",
+    "Administers and regulates financial institutions and structures of the economy of Singapore.",
+    "Ensures a sound and progressive legal infrastructure, intellectual property infrastructure and insolvency regime, and to optimise land resources, to support national goals.",
+    "The Constitution lays down the fundamental principles and basic framework for the three organs of state, namely, the Executive, the Legislative and the Judiciary.",
+    "Ministerial level executive agency within the Government of Singapore that handles the ministries and other political matters such as corruption & elections.",
+    "Upholds the rule of law through sound advice, effective representation, fair and independent prosecution and accessible legislation.",
+    "Enhances public accountability in the management and use of public funds and resources through our audits.",
+    "Responsible for all government policies and the day-to-day administration of the affairs of the state.",
+    "This is where the President receives and entertains state guests. The Istana is also the working office of the Prime Minister of Singapore.",
+    "Administration of justice, and entails the system of courts of law.",
+    "Makes laws, controls the state's finances and takes up a critical/inquisitorial role to check on the actions of the governing party and the Ministries.",
+    "Appoints and exercises disciplinary control over public officers in Singapore.",
+    "Labour expense within the ministry.",
+    "Financial awards given to eligible personnel.",
+    "Miscellaneous expenses within the ministry.",
+    "Social payments made to individuals and external parties.",
+    "Maintenance, upgrades and new initiatives implemented by the ministry.",
+    "Capital expenditure on the nation's defences and armed forces."
 ];
 
 //document.getElementById('content2013').style.display = 'none';
@@ -107,8 +136,8 @@ function refresh() {
 
         if (percentSpent < 0.01)
             return ("<h4><strong>" + d.name + "</strong></h4>" +
-                "<p>" + descriptionArray[id] + "</p>" +
-                "<p>(less than 0.01% of total budget)</p><hr/>" +
+                "<p class='percentage'>(less than 0.01% of total budget)</p>" +
+                "<p class='description'>" + descriptionArray[id] + "</p><hr/>" +
                 "<p class='alignleft'><strong>Expenditure:</strong></p>" + "<p class='alignright'><strong>Change:</strong></p><br/><br/>" +
                 "<p class='alignleft up'><strong>2014: </strong>$" + d.spent2014 + " billion</p>" + "<p class='alignright up " + color2 + "'> (" + sign2 + change2 + "%)</p><br/><br/>" +
                 "<p class='alignleft up2'><strong>2013: </strong>$" + d.spent2013 + " billion</p>" + "<p class='alignright up2 " + color1 + "'> (" + sign1 + change1 + "%)</p><br/><br/>" +
