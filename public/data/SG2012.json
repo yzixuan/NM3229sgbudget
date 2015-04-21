@@ -88,7 +88,9 @@
       "color":"#00BCD4", "value": 1188},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.4, "small": "true", "spent2012": "0.0388", "spent2013": "0.0456", "spent2014": "0.0655",
       "color":"#00BCD4", "value": 40}
-     ]
+     ],
+        "news": "Pay rise of up to 19% for social service professionals this year",
+        "newslink": "http://www.straitstimes.com/the-big-story/budget-debate-2015/story/pay-rise-19-social-service-professionals-year-20150313"
     },
     {
       "name": "Culture, Community and Youth",
@@ -136,7 +138,9 @@
       "color":"#536DFE", "value": 3581},
       {"name": "Development Expenditure", "level": 4, "id": 34, "fontsize": 1.4, "spent2012": "0.6173", "spent2013": "0.7246", "spent2014": "01.159",
       "color":"#536DFE", "value": 617}
-     ]
+     ],
+        "news" : "Major review to keep health care affordable",
+        "newslink": "http://www.straitstimes.com/the-big-story/budget-2013/story/major-review-keep-health-care-affordable-20121228"
     },
     {
       "name": "National Development",
