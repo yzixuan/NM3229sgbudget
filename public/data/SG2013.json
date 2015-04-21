@@ -436,7 +436,7 @@
                    "color":"#27ae60", "value": 10},
                {"name": "Judiciature", "level": 4, "id":27, "revenue": "103.312 million", "spent2012": "0.2028", "spent2013": "0.1901", "spent2014": "0.2028",
                    "color":"#27ae60", "value": 190},
-               {"name": "Parliament Of Singapore", "level": 4, "id":28, "revenue": "553,000", "fontsize": 1.3, "spent2012": "0.0343", "spent2013": "0.0342", "spent2014": "0.0343",
+               {"name": "Parliament Of Singapore", "level": 4, "id":28, "small2":"true", "revenue": "553,000", "fontsize": 1.3, "spent2012": "0.0343", "spent2013": "0.0342", "spent2014": "0.0343",
                    "color":"#27ae60", "value": 34},
                {"name": "Public Service Commission", "level": 4, "id":29, "fontsize": 0.8, "small": "true", "spent2012": "0.0019", "spent2013": "0.0020", "spent2014": "0.0019",
                    "color":"#27ae60", "value": 5}
