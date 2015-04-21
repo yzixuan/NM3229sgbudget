@@ -50,6 +50,14 @@ text {
   text-align: center;
 }
 
+.toptitle {
+    padding: 10px 30px;
+}
+
+.minitext {
+    font-size: 11px;
+}
+
 .up {
   margin-top: -6px;
 }
@@ -70,7 +78,6 @@ text {
 }
 
 .media {
-    padding-bottom: 8px;
     border-bottom: 1px solid #eee;
 }
 

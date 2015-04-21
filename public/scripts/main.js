@@ -24,11 +24,15 @@ var descriptionArray = [
     "Promote economic growth by improving factors like health, education, working conditions, domestic and international policies and market conditions.",
     "Maintains control of the finance, administration, internal security and law portfolios of the city state.",
     "Formulates and implements education policies. Also controls & administers Government-aided schools and institutes. It also registers private schools.",
-    "Guides Singapore’s land use planning, urban redevelopment and building conservation, deliver affordable and quality public housing."
+    "Guides Singapore’s land use planning, urban redevelopment and building conservation, deliver affordable and quality public housing.",
+    ""
 ];
 
-document.getElementById('content2013').style.display = 'none';
-document.getElementById('content2014').style.display = 'none';
+//document.getElementById('content2013').style.display = 'none';
+//document.getElementById('content2014').style.display = 'none';
+
+$('.variablecontent').hide();
+$('#content2012').show();
 
 function show2012() {
 
@@ -55,10 +59,11 @@ function show2012() {
         .round(false);
 
     refresh();
-    document.getElementById('newstitle').innerHTML = "BUDGET 2012 IN THE NEWS";
+    //document.getElementById('newstitle').innerHTML = "BUDGET 2012 IN THE NEWS";
+    $('.variablecontent').hide();
     document.getElementById('content2012').style.display = 'block';
-    document.getElementById('content2013').style.display = 'none';
-    document.getElementById('content2014').style.display = 'none';
+    //document.getElementById('content2013').style.display = 'none';
+    //document.getElementById('content2014').style.display = 'none';
 }
 
 refresh();
@@ -310,6 +315,12 @@ function refresh() {
             function transition(d) {
                 if (transitioning || !d) return;
                 transitioning = true;
+
+                if (d.id != undefined) {
+                    var contentName = "#content" + d.id;
+                    $('.variablecontent').hide();
+                    $(contentName).show();
+                }
 
                 var g2 = display(d),
                     t1 = g1.transition().duration(750),

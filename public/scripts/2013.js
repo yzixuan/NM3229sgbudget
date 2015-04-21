@@ -43,10 +43,11 @@ function show2013() {
         .round(false);
 
     refresh2013();
-    document.getElementById('newstitle').innerHTML = "BUDGET 2013 IN THE NEWS";
-    document.getElementById('content2012').style.display = 'none';
+    //document.getElementById('newstitle').innerHTML = "BUDGET 2013 IN THE NEWS";
+    //document.getElementById('content2012').style.display = 'none';
+    $('.variablecontent').hide();
     document.getElementById('content2013').style.display = 'block';
-    document.getElementById('content2014').style.display = 'none';
+    //document.getElementById('content2014').style.display = 'none';
 }
 
 refresh2013();
